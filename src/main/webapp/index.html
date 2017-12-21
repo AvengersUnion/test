@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title></title>
+
+</head>
+<body>
+	<h2>KindeEditor图片上传</h2>
+	<input type="button" value="上传" id="chooseImage" />
+	<img id="imgbox" src="#" style="display: none"/>
+	
+	<link href="kindeditor/themes/default/default.css" rel="stylesheet" />
+	<textarea id="editor_id" name="descript">
+</textarea>
+
+	<script src="js/jquery-2.2.2.min.js"></script>
+	<script src="kindeditor/kindeditor-min.js"></script>
+	<script src="kindeditor/lang/zh_CN.js"></script>
+	<script type="text/javascript">
+		 KindEditor.ready(function(K) {
+			K.create('textarea[name="descript"]', {
+				uploadJson : 'http://localhost:8080/upFile',
+				fileManagerJson : 'http://localhost:8080/upFile',
+				allowFileManager : true,
+				allowImageUpload : true,
+				autoHeightMode : true,
+				width : "640px",
+				height : "400px",
+				afterCreate : function() {
+					this.loadPlugin('autoheight');
+				},
+				afterBlur : function() {
+					this.sync();
+				} //Kindeditor下获取文本框信息  
+			});
+		}); 
+		 
+		 KindEditor.ready(function (K) {
+		        var editor = K.editor({
+		            uploadJson: 'http://localhost:8080/upFile',
+		            allowFileManager: false
+		        });
+
+		        K('#chooseImage').click(function () {
+		            editor.loadPlugin('image', function () {
+		                editor.plugin.imageDialog({
+		                    showRemote: false,
+		                    imageUrl: K('#PicUrl').val(),
+		                    clickFn: function (url, message, error) {
+		                        alert(message);
+		                        K("#imgbox").attr("src", url);
+		                        K("#imgbox").show();
+		                        editor.hideDialog();
+		                    }
+		                });
+		            });
+		        });
+		    });
+
+	</script>
+</body>
+</html>

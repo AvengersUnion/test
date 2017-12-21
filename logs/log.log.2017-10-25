@@ -1,0 +1,202 @@
+2017-10-25 12:56:41  [ localhost-startStop-1:0 ] - [ INFO ]  Root WebApplicationContext: initialization started
+2017-10-25 12:56:41  [ localhost-startStop-1:125 ] - [ INFO ]  Refreshing Root WebApplicationContext: startup date [Wed Oct 25 12:56:41 CST 2017]; root of context hierarchy
+2017-10-25 12:56:41  [ localhost-startStop-1:187 ] - [ INFO ]  Loading XML bean definitions from file [F:\workspace\2017\1023_jump\target\classes\spring\applicationContext-dao.xml]
+2017-10-25 12:56:41  [ localhost-startStop-1:548 ] - [ INFO ]  Loading XML bean definitions from file [F:\workspace\2017\1023_jump\target\classes\spring\applicationContext-service.xml]
+2017-10-25 12:56:41  [ localhost-startStop-1:735 ] - [ INFO ]  Loading XML bean definitions from file [F:\workspace\2017\1023_jump\target\classes\spring\applicationContext-trans.xml]
+2017-10-25 12:56:42  [ localhost-startStop-1:1141 ] - [ INFO ]  Loading properties file from class path resource [properties/db.properties]
+2017-10-25 12:56:42  [ localhost-startStop-1:1252 ] - [ INFO ]  JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+2017-10-25 12:56:43  [ localhost-startStop-1:2895 ] - [ INFO ]  Root WebApplicationContext: initialization completed in 2895 ms
+2017-10-25 12:56:44  [ localhost-startStop-1:2973 ] - [ INFO ]  FrameworkServlet '1023_jump': initialization started
+2017-10-25 12:56:44  [ localhost-startStop-1:2989 ] - [ INFO ]  Refreshing WebApplicationContext for namespace '1023_jump-servlet': startup date [Wed Oct 25 12:56:44 CST 2017]; parent: Root WebApplicationContext
+2017-10-25 12:56:44  [ localhost-startStop-1:2989 ] - [ INFO ]  Loading XML bean definitions from class path resource [spring/springmvc.xml]
+2017-10-25 12:56:44  [ localhost-startStop-1:3538 ] - [ INFO ]  JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+2017-10-25 12:56:44  [ localhost-startStop-1:3865 ] - [ INFO ]  Mapped "{[/pic/delDir]}" onto public void com.jump.controller.PicDirController.deleteDir(java.lang.Integer)
+2017-10-25 12:56:44  [ localhost-startStop-1:3865 ] - [ INFO ]  Mapped "{[/pic/renameDir]}" onto public void com.jump.controller.PicDirController.updateDirName(java.lang.String,java.lang.Integer)
+2017-10-25 12:56:44  [ localhost-startStop-1:3865 ] - [ INFO ]  Mapped "{[/pic/addDir]}" onto public com.jump.pojo.PicDir com.jump.controller.PicDirController.addDir(java.lang.Integer,java.lang.String)
+2017-10-25 12:56:44  [ localhost-startStop-1:3865 ] - [ INFO ]  Mapped "{[/pic/getDir]}" onto public java.util.List<com.jump.pojo.PicDir> com.jump.controller.PicDirController.findDir(java.lang.Integer)
+2017-10-25 12:56:45  [ localhost-startStop-1:4630 ] - [ INFO ]  Looking for @ControllerAdvice: WebApplicationContext for namespace '1023_jump-servlet': startup date [Wed Oct 25 12:56:44 CST 2017]; parent: Root WebApplicationContext
+2017-10-25 12:56:46  [ localhost-startStop-1:4976 ] - [ INFO ]  Looking for @ControllerAdvice: WebApplicationContext for namespace '1023_jump-servlet': startup date [Wed Oct 25 12:56:44 CST 2017]; parent: Root WebApplicationContext
+2017-10-25 12:56:46  [ localhost-startStop-1:5319 ] - [ INFO ]  Mapped URL path [/**] onto handler 'org.springframework.web.servlet.resource.DefaultServletHttpRequestHandler#0'
+2017-10-25 12:56:46  [ localhost-startStop-1:5649 ] - [ INFO ]  FrameworkServlet '1023_jump': initialization completed in 2676 ms
+2017-10-25 12:57:04  [ http-bio-8080-exec-1:23576 ] - [ ERROR ]  java.lang.ArithmeticException: / by zero
+	at com.jump.controller.PicDirController.deleteDir(PicDirController.java:70)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:606)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:222)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:137)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:110)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:814)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:737)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:85)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:959)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:893)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:969)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:860)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:621)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:845)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:728)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:305)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:210)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:243)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:210)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:121)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:243)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:210)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:222)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:123)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:502)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:171)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:100)
+	at org.apache.catalina.valves.AccessLogValve.invoke(AccessLogValve.java:953)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:118)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:408)
+	at org.apache.coyote.http11.AbstractHttp11Processor.process(AbstractHttp11Processor.java:1041)
+	at org.apache.coyote.AbstractProtocol$AbstractConnectionHandler.process(AbstractProtocol.java:603)
+	at org.apache.tomcat.util.net.JIoEndpoint$SocketProcessor.run(JIoEndpoint.java:310)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:745)
+
+2017-10-25 17:05:57  [ localhost-startStop-1:0 ] - [ INFO ]  Root WebApplicationContext: initialization started
+2017-10-25 17:05:58  [ localhost-startStop-1:164 ] - [ INFO ]  Refreshing Root WebApplicationContext: startup date [Wed Oct 25 17:05:58 CST 2017]; root of context hierarchy
+2017-10-25 17:05:58  [ localhost-startStop-1:251 ] - [ INFO ]  Loading XML bean definitions from file [F:\workspace\2017\1023_jump\target\classes\spring\applicationContext-dao.xml]
+2017-10-25 17:05:58  [ localhost-startStop-1:493 ] - [ INFO ]  Loading XML bean definitions from file [F:\workspace\2017\1023_jump\target\classes\spring\applicationContext-service.xml]
+2017-10-25 17:05:58  [ localhost-startStop-1:668 ] - [ INFO ]  Loading XML bean definitions from file [F:\workspace\2017\1023_jump\target\classes\spring\applicationContext-trans.xml]
+2017-10-25 17:05:58  [ localhost-startStop-1:1066 ] - [ INFO ]  Loading properties file from class path resource [properties/db.properties]
+2017-10-25 17:05:58  [ localhost-startStop-1:1103 ] - [ INFO ]  JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+2017-10-25 17:06:00  [ localhost-startStop-1:2859 ] - [ INFO ]  Root WebApplicationContext: initialization completed in 2855 ms
+2017-10-25 17:06:00  [ localhost-startStop-1:2913 ] - [ INFO ]  FrameworkServlet '1023_jump': initialization started
+2017-10-25 17:06:00  [ localhost-startStop-1:2925 ] - [ INFO ]  Refreshing WebApplicationContext for namespace '1023_jump-servlet': startup date [Wed Oct 25 17:06:00 CST 2017]; parent: Root WebApplicationContext
+2017-10-25 17:06:00  [ localhost-startStop-1:2928 ] - [ INFO ]  Loading XML bean definitions from class path resource [spring/springmvc.xml]
+2017-10-25 17:06:01  [ localhost-startStop-1:3278 ] - [ INFO ]  JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+2017-10-25 17:06:01  [ localhost-startStop-1:3641 ] - [ INFO ]  Mapped "{[/dir]}" onto public void com.jump.controller.DirController.deleteDir(java.lang.Integer)
+2017-10-25 17:06:01  [ localhost-startStop-1:3643 ] - [ INFO ]  Mapped "{[/dir/get/{parentId}/{type}]}" onto public com.jump.pojo.DirAndPicVideo com.jump.controller.DirController.getDir(java.lang.Integer,java.lang.Integer)
+2017-10-25 17:06:01  [ localhost-startStop-1:3645 ] - [ WARN ]  Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping': Invocation of init method failed; nested exception is java.lang.IllegalStateException: Ambiguous mapping. Cannot map 'dirController' method 
+public com.jump.pojo.Directory com.jump.controller.DirController.addDir(java.lang.Integer,java.lang.String,java.lang.Integer)
+to {[/dir]}: There is already 'dirController' bean method
+public void com.jump.controller.DirController.deleteDir(java.lang.Integer) mapped.
+2017-10-25 17:06:01  [ localhost-startStop-1:3647 ] - [ ERROR ]  Context initialization failed
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping': Invocation of init method failed; nested exception is java.lang.IllegalStateException: Ambiguous mapping. Cannot map 'dirController' method 
+public com.jump.pojo.Directory com.jump.controller.DirController.addDir(java.lang.Integer,java.lang.String,java.lang.Integer)
+to {[/dir]}: There is already 'dirController' bean method
+public void com.jump.controller.DirController.deleteDir(java.lang.Integer) mapped.
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1578)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:545)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:482)
+	at org.springframework.beans.factory.support.AbstractBeanFactory$1.getObject(AbstractBeanFactory.java:306)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:230)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:302)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:197)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:772)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:839)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:538)
+	at org.springframework.web.servlet.FrameworkServlet.configureAndRefreshWebApplicationContext(FrameworkServlet.java:668)
+	at org.springframework.web.servlet.FrameworkServlet.createWebApplicationContext(FrameworkServlet.java:634)
+	at org.springframework.web.servlet.FrameworkServlet.createWebApplicationContext(FrameworkServlet.java:682)
+	at org.springframework.web.servlet.FrameworkServlet.initWebApplicationContext(FrameworkServlet.java:553)
+	at org.springframework.web.servlet.FrameworkServlet.initServletBean(FrameworkServlet.java:494)
+	at org.springframework.web.servlet.HttpServletBean.init(HttpServletBean.java:136)
+	at javax.servlet.GenericServlet.init(GenericServlet.java:160)
+	at org.apache.catalina.core.StandardWrapper.initServlet(StandardWrapper.java:1280)
+	at org.apache.catalina.core.StandardWrapper.loadServlet(StandardWrapper.java:1193)
+	at org.apache.catalina.core.StandardWrapper.load(StandardWrapper.java:1088)
+	at org.apache.catalina.core.StandardContext.loadOnStartup(StandardContext.java:5176)
+	at org.apache.catalina.core.StandardContext.startInternal(StandardContext.java:5460)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:150)
+	at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1559)
+	at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1549)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:262)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: java.lang.IllegalStateException: Ambiguous mapping. Cannot map 'dirController' method 
+public com.jump.pojo.Directory com.jump.controller.DirController.addDir(java.lang.Integer,java.lang.String,java.lang.Integer)
+to {[/dir]}: There is already 'dirController' bean method
+public void com.jump.controller.DirController.deleteDir(java.lang.Integer) mapped.
+	at org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry.assertUniqueMethodMapping(AbstractHandlerMethodMapping.java:560)
+	at org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry.register(AbstractHandlerMethodMapping.java:524)
+	at org.springframework.web.servlet.handler.AbstractHandlerMethodMapping.registerHandlerMethod(AbstractHandlerMethodMapping.java:250)
+	at org.springframework.web.servlet.handler.AbstractHandlerMethodMapping.detectHandlerMethods(AbstractHandlerMethodMapping.java:226)
+	at org.springframework.web.servlet.handler.AbstractHandlerMethodMapping.initHandlerMethods(AbstractHandlerMethodMapping.java:191)
+	at org.springframework.web.servlet.handler.AbstractHandlerMethodMapping.afterPropertiesSet(AbstractHandlerMethodMapping.java:161)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping.afterPropertiesSet(RequestMappingHandlerMapping.java:125)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1637)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1574)
+	... 28 more
+2017-10-25 17:11:29  [ localhost-startStop-1:0 ] - [ INFO ]  Root WebApplicationContext: initialization started
+2017-10-25 17:11:29  [ localhost-startStop-1:155 ] - [ INFO ]  Refreshing Root WebApplicationContext: startup date [Wed Oct 25 17:11:29 CST 2017]; root of context hierarchy
+2017-10-25 17:11:29  [ localhost-startStop-1:216 ] - [ INFO ]  Loading XML bean definitions from file [F:\workspace\2017\1023_jump\target\classes\spring\applicationContext-dao.xml]
+2017-10-25 17:11:29  [ localhost-startStop-1:426 ] - [ INFO ]  Loading XML bean definitions from file [F:\workspace\2017\1023_jump\target\classes\spring\applicationContext-service.xml]
+2017-10-25 17:11:30  [ localhost-startStop-1:600 ] - [ INFO ]  Loading XML bean definitions from file [F:\workspace\2017\1023_jump\target\classes\spring\applicationContext-trans.xml]
+2017-10-25 17:11:30  [ localhost-startStop-1:933 ] - [ INFO ]  Loading properties file from class path resource [properties/db.properties]
+2017-10-25 17:11:30  [ localhost-startStop-1:967 ] - [ INFO ]  JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+2017-10-25 17:11:32  [ localhost-startStop-1:2523 ] - [ INFO ]  Root WebApplicationContext: initialization completed in 2519 ms
+2017-10-25 17:11:32  [ localhost-startStop-1:2594 ] - [ INFO ]  FrameworkServlet '1023_jump': initialization started
+2017-10-25 17:11:32  [ localhost-startStop-1:2603 ] - [ INFO ]  Refreshing WebApplicationContext for namespace '1023_jump-servlet': startup date [Wed Oct 25 17:11:32 CST 2017]; parent: Root WebApplicationContext
+2017-10-25 17:11:32  [ localhost-startStop-1:2605 ] - [ INFO ]  Loading XML bean definitions from class path resource [spring/springmvc.xml]
+2017-10-25 17:11:32  [ localhost-startStop-1:2883 ] - [ INFO ]  JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+2017-10-25 17:11:32  [ localhost-startStop-1:3168 ] - [ INFO ]  Mapped "{[/dir/get/{parentId}/{type}]}" onto public com.jump.pojo.DirAndPicVideo com.jump.controller.DirController.getDir(java.lang.Integer,java.lang.Integer)
+2017-10-25 17:11:33  [ localhost-startStop-1:3675 ] - [ INFO ]  Looking for @ControllerAdvice: WebApplicationContext for namespace '1023_jump-servlet': startup date [Wed Oct 25 17:11:32 CST 2017]; parent: Root WebApplicationContext
+2017-10-25 17:11:33  [ localhost-startStop-1:3767 ] - [ INFO ]  Looking for @ControllerAdvice: WebApplicationContext for namespace '1023_jump-servlet': startup date [Wed Oct 25 17:11:32 CST 2017]; parent: Root WebApplicationContext
+2017-10-25 17:11:33  [ localhost-startStop-1:3942 ] - [ INFO ]  Mapped URL path [/**] onto handler 'org.springframework.web.servlet.resource.DefaultServletHttpRequestHandler#0'
+2017-10-25 17:11:33  [ localhost-startStop-1:4075 ] - [ INFO ]  FrameworkServlet '1023_jump': initialization completed in 1481 ms
+2017-10-25 17:14:02  [ localhost-startStop-1:0 ] - [ INFO ]  Root WebApplicationContext: initialization started
+2017-10-25 17:14:02  [ localhost-startStop-1:202 ] - [ INFO ]  Refreshing Root WebApplicationContext: startup date [Wed Oct 25 17:14:02 CST 2017]; root of context hierarchy
+2017-10-25 17:14:02  [ localhost-startStop-1:283 ] - [ INFO ]  Loading XML bean definitions from file [F:\workspace\2017\1023_jump\target\classes\spring\applicationContext-dao.xml]
+2017-10-25 17:14:02  [ localhost-startStop-1:519 ] - [ INFO ]  Loading XML bean definitions from file [F:\workspace\2017\1023_jump\target\classes\spring\applicationContext-service.xml]
+2017-10-25 17:14:02  [ localhost-startStop-1:720 ] - [ INFO ]  Loading XML bean definitions from file [F:\workspace\2017\1023_jump\target\classes\spring\applicationContext-trans.xml]
+2017-10-25 17:14:03  [ localhost-startStop-1:1159 ] - [ INFO ]  Loading properties file from class path resource [properties/db.properties]
+2017-10-25 17:14:03  [ localhost-startStop-1:1197 ] - [ INFO ]  JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+2017-10-25 17:14:05  [ localhost-startStop-1:3179 ] - [ INFO ]  Root WebApplicationContext: initialization completed in 3176 ms
+2017-10-25 17:14:05  [ localhost-startStop-1:3256 ] - [ INFO ]  FrameworkServlet '1023_jump': initialization started
+2017-10-25 17:14:05  [ localhost-startStop-1:3273 ] - [ INFO ]  Refreshing WebApplicationContext for namespace '1023_jump-servlet': startup date [Wed Oct 25 17:14:05 CST 2017]; parent: Root WebApplicationContext
+2017-10-25 17:14:05  [ localhost-startStop-1:3278 ] - [ INFO ]  Loading XML bean definitions from class path resource [spring/springmvc.xml]
+2017-10-25 17:14:05  [ localhost-startStop-1:3637 ] - [ INFO ]  JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+2017-10-25 17:14:05  [ localhost-startStop-1:3961 ] - [ INFO ]  Mapped "{[/dir/get/{parentId}/{type}]}" onto public com.jump.pojo.DirAndPicVideo com.jump.controller.DirController.getDir(java.lang.Integer,java.lang.Integer)
+2017-10-25 17:14:06  [ localhost-startStop-1:4950 ] - [ INFO ]  Looking for @ControllerAdvice: WebApplicationContext for namespace '1023_jump-servlet': startup date [Wed Oct 25 17:14:05 CST 2017]; parent: Root WebApplicationContext
+2017-10-25 17:14:07  [ localhost-startStop-1:5170 ] - [ INFO ]  Looking for @ControllerAdvice: WebApplicationContext for namespace '1023_jump-servlet': startup date [Wed Oct 25 17:14:05 CST 2017]; parent: Root WebApplicationContext
+2017-10-25 17:14:07  [ localhost-startStop-1:5539 ] - [ INFO ]  Mapped URL path [/**] onto handler 'org.springframework.web.servlet.resource.DefaultServletHttpRequestHandler#0'
+2017-10-25 17:14:07  [ localhost-startStop-1:5851 ] - [ INFO ]  FrameworkServlet '1023_jump': initialization completed in 2594 ms
+2017-10-25 17:14:10  [ http-bio-8080-exec-1:8818 ] - [ INFO ]  {dataSource-1} inited
+2017-10-25 17:19:12  [ localhost-startStop-1:0 ] - [ INFO ]  Root WebApplicationContext: initialization started
+2017-10-25 17:19:12  [ localhost-startStop-1:150 ] - [ INFO ]  Refreshing Root WebApplicationContext: startup date [Wed Oct 25 17:19:12 CST 2017]; root of context hierarchy
+2017-10-25 17:19:12  [ localhost-startStop-1:233 ] - [ INFO ]  Loading XML bean definitions from file [F:\workspace\2017\1023_jump\target\classes\spring\applicationContext-dao.xml]
+2017-10-25 17:19:12  [ localhost-startStop-1:468 ] - [ INFO ]  Loading XML bean definitions from file [F:\workspace\2017\1023_jump\target\classes\spring\applicationContext-service.xml]
+2017-10-25 17:19:12  [ localhost-startStop-1:665 ] - [ INFO ]  Loading XML bean definitions from file [F:\workspace\2017\1023_jump\target\classes\spring\applicationContext-trans.xml]
+2017-10-25 17:19:13  [ localhost-startStop-1:1087 ] - [ INFO ]  Loading properties file from class path resource [properties/db.properties]
+2017-10-25 17:19:13  [ localhost-startStop-1:1119 ] - [ INFO ]  JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+2017-10-25 17:19:15  [ localhost-startStop-1:2991 ] - [ INFO ]  Root WebApplicationContext: initialization completed in 2987 ms
+2017-10-25 17:19:15  [ localhost-startStop-1:3066 ] - [ INFO ]  FrameworkServlet '1023_jump': initialization started
+2017-10-25 17:19:15  [ localhost-startStop-1:3079 ] - [ INFO ]  Refreshing WebApplicationContext for namespace '1023_jump-servlet': startup date [Wed Oct 25 17:19:15 CST 2017]; parent: Root WebApplicationContext
+2017-10-25 17:19:15  [ localhost-startStop-1:3084 ] - [ INFO ]  Loading XML bean definitions from class path resource [spring/springmvc.xml]
+2017-10-25 17:19:15  [ localhost-startStop-1:3504 ] - [ INFO ]  JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+2017-10-25 17:19:15  [ localhost-startStop-1:3921 ] - [ INFO ]  Mapped "{[/dir/get/{parentId}/{type}]}" onto public com.jump.pojo.DirAndPicVideo com.jump.controller.DirController.getDir(java.lang.Integer,java.lang.Integer)
+2017-10-25 17:19:16  [ localhost-startStop-1:4858 ] - [ INFO ]  Looking for @ControllerAdvice: WebApplicationContext for namespace '1023_jump-servlet': startup date [Wed Oct 25 17:19:15 CST 2017]; parent: Root WebApplicationContext
+2017-10-25 17:19:17  [ localhost-startStop-1:5078 ] - [ INFO ]  Looking for @ControllerAdvice: WebApplicationContext for namespace '1023_jump-servlet': startup date [Wed Oct 25 17:19:15 CST 2017]; parent: Root WebApplicationContext
+2017-10-25 17:19:17  [ localhost-startStop-1:5487 ] - [ INFO ]  Mapped URL path [/**] onto handler 'org.springframework.web.servlet.resource.DefaultServletHttpRequestHandler#0'
+2017-10-25 17:19:17  [ localhost-startStop-1:5853 ] - [ INFO ]  FrameworkServlet '1023_jump': initialization completed in 2786 ms
+2017-10-25 17:30:45  [ localhost-startStop-1:0 ] - [ INFO ]  Root WebApplicationContext: initialization started
+2017-10-25 17:30:45  [ localhost-startStop-1:165 ] - [ INFO ]  Refreshing Root WebApplicationContext: startup date [Wed Oct 25 17:30:45 CST 2017]; root of context hierarchy
+2017-10-25 17:30:45  [ localhost-startStop-1:238 ] - [ INFO ]  Loading XML bean definitions from file [F:\workspace\2017\1023_jump\target\classes\spring\applicationContext-dao.xml]
+2017-10-25 17:30:45  [ localhost-startStop-1:447 ] - [ INFO ]  Loading XML bean definitions from file [F:\workspace\2017\1023_jump\target\classes\spring\applicationContext-service.xml]
+2017-10-25 17:30:46  [ localhost-startStop-1:646 ] - [ INFO ]  Loading XML bean definitions from file [F:\workspace\2017\1023_jump\target\classes\spring\applicationContext-trans.xml]
+2017-10-25 17:30:46  [ localhost-startStop-1:1100 ] - [ INFO ]  Loading properties file from class path resource [properties/db.properties]
+2017-10-25 17:30:46  [ localhost-startStop-1:1131 ] - [ INFO ]  JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+2017-10-25 17:30:48  [ localhost-startStop-1:2821 ] - [ INFO ]  Root WebApplicationContext: initialization completed in 2817 ms
+2017-10-25 17:30:48  [ localhost-startStop-1:2911 ] - [ INFO ]  FrameworkServlet '1023_jump': initialization started
+2017-10-25 17:30:48  [ localhost-startStop-1:2928 ] - [ INFO ]  Refreshing WebApplicationContext for namespace '1023_jump-servlet': startup date [Wed Oct 25 17:30:48 CST 2017]; parent: Root WebApplicationContext
+2017-10-25 17:30:48  [ localhost-startStop-1:2932 ] - [ INFO ]  Loading XML bean definitions from class path resource [spring/springmvc.xml]
+2017-10-25 17:30:48  [ localhost-startStop-1:3307 ] - [ INFO ]  JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+2017-10-25 17:30:49  [ localhost-startStop-1:3666 ] - [ INFO ]  Mapped "{[/dir/del/{id}]}" onto public void com.jump.controller.DirController.deleteDir(java.lang.Integer)
+2017-10-25 17:30:49  [ localhost-startStop-1:3668 ] - [ INFO ]  Mapped "{[/dir/get/{parentId}/{type}]}" onto public com.jump.pojo.DirAndPicVideo com.jump.controller.DirController.getDir(java.lang.Integer,java.lang.Integer)
+2017-10-25 17:30:49  [ localhost-startStop-1:3670 ] - [ INFO ]  Mapped "{[/dir/upd/{id}/{name}]}" onto public void com.jump.controller.DirController.updateDir(java.lang.Integer,java.lang.String)
+2017-10-25 17:30:49  [ localhost-startStop-1:3671 ] - [ INFO ]  Mapped "{[/dir/add/{parentId}/{name}/{type}]}" onto public com.jump.pojo.Directory com.jump.controller.DirController.addDir(java.lang.Integer,java.lang.String,java.lang.Integer)
+2017-10-25 17:30:49  [ localhost-startStop-1:4347 ] - [ INFO ]  Looking for @ControllerAdvice: WebApplicationContext for namespace '1023_jump-servlet': startup date [Wed Oct 25 17:30:48 CST 2017]; parent: Root WebApplicationContext
+2017-10-25 17:30:50  [ localhost-startStop-1:4536 ] - [ INFO ]  Looking for @ControllerAdvice: WebApplicationContext for namespace '1023_jump-servlet': startup date [Wed Oct 25 17:30:48 CST 2017]; parent: Root WebApplicationContext
+2017-10-25 17:30:50  [ localhost-startStop-1:4906 ] - [ INFO ]  Mapped URL path [/**] onto handler 'org.springframework.web.servlet.resource.DefaultServletHttpRequestHandler#0'
+2017-10-25 17:30:50  [ localhost-startStop-1:5167 ] - [ INFO ]  FrameworkServlet '1023_jump': initialization completed in 2255 ms
+2017-10-25 17:30:58  [ http-bio-8080-exec-1:12762 ] - [ INFO ]  {dataSource-1} inited

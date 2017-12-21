@@ -1,0 +1,5 @@
+com\jump\common\JumpResult.class
+com\jump\utils\LogUtils.class
+com\jump\controller\ImageUpload.class
+com\jump\utils\JsonUtils.class
+com\jump\utils\UploadUtils.class

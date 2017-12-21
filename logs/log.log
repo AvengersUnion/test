@@ -1,0 +1,281 @@
+2017-11-03 13:14:22  [ localhost-startStop-1:0 ] - [ INFO ]  Root WebApplicationContext: initialization started
+2017-11-03 13:14:22  [ localhost-startStop-1:147 ] - [ INFO ]  Refreshing Root WebApplicationContext: startup date [Fri Nov 03 13:14:22 CST 2017]; root of context hierarchy
+2017-11-03 13:14:22  [ localhost-startStop-1:230 ] - [ INFO ]  Loading XML bean definitions from file [F:\workspace\2017\1023_jump\target\classes\spring\applicationContext-dao.xml]
+2017-11-03 13:14:23  [ localhost-startStop-1:565 ] - [ INFO ]  Loading XML bean definitions from file [F:\workspace\2017\1023_jump\target\classes\spring\applicationContext-service.xml]
+2017-11-03 13:14:23  [ localhost-startStop-1:681 ] - [ INFO ]  Loading XML bean definitions from file [F:\workspace\2017\1023_jump\target\classes\spring\applicationContext-trans.xml]
+2017-11-03 13:14:23  [ localhost-startStop-1:1126 ] - [ INFO ]  Loading properties file from class path resource [properties/db.properties]
+2017-11-03 13:14:23  [ localhost-startStop-1:1158 ] - [ INFO ]  JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+2017-11-03 13:14:26  [ localhost-startStop-1:3315 ] - [ INFO ]  Root WebApplicationContext: initialization completed in 3310 ms
+2017-11-03 13:14:26  [ localhost-startStop-1:3378 ] - [ INFO ]  FrameworkServlet '1023_jump': initialization started
+2017-11-03 13:14:26  [ localhost-startStop-1:3386 ] - [ INFO ]  Refreshing WebApplicationContext for namespace '1023_jump-servlet': startup date [Fri Nov 03 13:14:26 CST 2017]; parent: Root WebApplicationContext
+2017-11-03 13:14:26  [ localhost-startStop-1:3388 ] - [ INFO ]  Loading XML bean definitions from class path resource [spring/springmvc.xml]
+2017-11-03 13:14:26  [ localhost-startStop-1:3810 ] - [ INFO ]  JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+2017-11-03 13:14:27  [ localhost-startStop-1:4723 ] - [ INFO ]  Looking for @ControllerAdvice: WebApplicationContext for namespace '1023_jump-servlet': startup date [Fri Nov 03 13:14:26 CST 2017]; parent: Root WebApplicationContext
+2017-11-03 13:14:27  [ localhost-startStop-1:4841 ] - [ INFO ]  Looking for @ControllerAdvice: WebApplicationContext for namespace '1023_jump-servlet': startup date [Fri Nov 03 13:14:26 CST 2017]; parent: Root WebApplicationContext
+2017-11-03 13:14:27  [ localhost-startStop-1:4985 ] - [ INFO ]  Mapped URL path [/**] onto handler 'org.springframework.web.servlet.resource.DefaultServletHttpRequestHandler#0'
+2017-11-03 13:14:27  [ localhost-startStop-1:5076 ] - [ INFO ]  FrameworkServlet '1023_jump': initialization completed in 1698 ms
+2017-11-03 13:16:47  [ localhost-startStop-1:0 ] - [ INFO ]  Root WebApplicationContext: initialization started
+2017-11-03 13:16:47  [ localhost-startStop-1:102 ] - [ INFO ]  Refreshing Root WebApplicationContext: startup date [Fri Nov 03 13:16:47 CST 2017]; root of context hierarchy
+2017-11-03 13:16:47  [ localhost-startStop-1:153 ] - [ INFO ]  Loading XML bean definitions from file [F:\workspace\2017\1023_jump\target\classes\spring\applicationContext-dao.xml]
+2017-11-03 13:16:47  [ localhost-startStop-1:306 ] - [ INFO ]  Loading XML bean definitions from file [F:\workspace\2017\1023_jump\target\classes\spring\applicationContext-service.xml]
+2017-11-03 13:16:47  [ localhost-startStop-1:384 ] - [ INFO ]  Loading XML bean definitions from file [F:\workspace\2017\1023_jump\target\classes\spring\applicationContext-trans.xml]
+2017-11-03 13:16:47  [ localhost-startStop-1:665 ] - [ INFO ]  Loading properties file from class path resource [properties/db.properties]
+2017-11-03 13:16:47  [ localhost-startStop-1:692 ] - [ INFO ]  JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+2017-11-03 13:16:49  [ localhost-startStop-1:1970 ] - [ INFO ]  Root WebApplicationContext: initialization completed in 1968 ms
+2017-11-03 13:16:49  [ localhost-startStop-1:2008 ] - [ INFO ]  FrameworkServlet '1023_jump': initialization started
+2017-11-03 13:16:49  [ localhost-startStop-1:2014 ] - [ INFO ]  Refreshing WebApplicationContext for namespace '1023_jump-servlet': startup date [Fri Nov 03 13:16:49 CST 2017]; parent: Root WebApplicationContext
+2017-11-03 13:16:49  [ localhost-startStop-1:2016 ] - [ INFO ]  Loading XML bean definitions from class path resource [spring/springmvc.xml]
+2017-11-03 13:16:49  [ localhost-startStop-1:2287 ] - [ INFO ]  JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+2017-11-03 13:16:49  [ localhost-startStop-1:2872 ] - [ INFO ]  Looking for @ControllerAdvice: WebApplicationContext for namespace '1023_jump-servlet': startup date [Fri Nov 03 13:16:49 CST 2017]; parent: Root WebApplicationContext
+2017-11-03 13:16:50  [ localhost-startStop-1:2937 ] - [ INFO ]  Looking for @ControllerAdvice: WebApplicationContext for namespace '1023_jump-servlet': startup date [Fri Nov 03 13:16:49 CST 2017]; parent: Root WebApplicationContext
+2017-11-03 13:16:50  [ localhost-startStop-1:3053 ] - [ INFO ]  Mapped URL path [/**] onto handler 'org.springframework.web.servlet.resource.DefaultServletHttpRequestHandler#0'
+2017-11-03 13:16:50  [ localhost-startStop-1:3152 ] - [ INFO ]  FrameworkServlet '1023_jump': initialization completed in 1144 ms
+2017-11-03 13:23:39  [ localhost-startStop-1:0 ] - [ INFO ]  Root WebApplicationContext: initialization started
+2017-11-03 13:23:39  [ localhost-startStop-1:93 ] - [ INFO ]  Refreshing Root WebApplicationContext: startup date [Fri Nov 03 13:23:39 CST 2017]; root of context hierarchy
+2017-11-03 13:23:39  [ localhost-startStop-1:142 ] - [ INFO ]  Loading XML bean definitions from file [F:\workspace\2017\1023_jump\target\classes\spring\applicationContext-dao.xml]
+2017-11-03 13:23:39  [ localhost-startStop-1:310 ] - [ INFO ]  Loading XML bean definitions from file [F:\workspace\2017\1023_jump\target\classes\spring\applicationContext-service.xml]
+2017-11-03 13:23:39  [ localhost-startStop-1:392 ] - [ INFO ]  Loading XML bean definitions from file [F:\workspace\2017\1023_jump\target\classes\spring\applicationContext-trans.xml]
+2017-11-03 13:23:40  [ localhost-startStop-1:667 ] - [ INFO ]  Loading properties file from class path resource [properties/db.properties]
+2017-11-03 13:23:40  [ localhost-startStop-1:702 ] - [ INFO ]  JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+2017-11-03 13:23:41  [ localhost-startStop-1:1942 ] - [ INFO ]  Root WebApplicationContext: initialization completed in 1940 ms
+2017-11-03 13:23:41  [ localhost-startStop-1:1984 ] - [ INFO ]  FrameworkServlet '1023_jump': initialization started
+2017-11-03 13:23:41  [ localhost-startStop-1:1990 ] - [ INFO ]  Refreshing WebApplicationContext for namespace '1023_jump-servlet': startup date [Fri Nov 03 13:23:41 CST 2017]; parent: Root WebApplicationContext
+2017-11-03 13:23:41  [ localhost-startStop-1:1991 ] - [ INFO ]  Loading XML bean definitions from class path resource [spring/springmvc.xml]
+2017-11-03 13:23:41  [ localhost-startStop-1:2202 ] - [ INFO ]  JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+2017-11-03 13:23:42  [ localhost-startStop-1:2794 ] - [ INFO ]  Looking for @ControllerAdvice: WebApplicationContext for namespace '1023_jump-servlet': startup date [Fri Nov 03 13:23:41 CST 2017]; parent: Root WebApplicationContext
+2017-11-03 13:23:42  [ localhost-startStop-1:2876 ] - [ INFO ]  Looking for @ControllerAdvice: WebApplicationContext for namespace '1023_jump-servlet': startup date [Fri Nov 03 13:23:41 CST 2017]; parent: Root WebApplicationContext
+2017-11-03 13:23:42  [ localhost-startStop-1:3021 ] - [ INFO ]  Mapped URL path [/**] onto handler 'org.springframework.web.servlet.resource.DefaultServletHttpRequestHandler#0'
+2017-11-03 13:23:42  [ localhost-startStop-1:3115 ] - [ INFO ]  FrameworkServlet '1023_jump': initialization completed in 1131 ms
+2017-11-03 13:38:55  [ localhost-startStop-1:0 ] - [ INFO ]  Root WebApplicationContext: initialization started
+2017-11-03 13:38:55  [ localhost-startStop-1:101 ] - [ INFO ]  Refreshing Root WebApplicationContext: startup date [Fri Nov 03 13:38:55 CST 2017]; root of context hierarchy
+2017-11-03 13:38:55  [ localhost-startStop-1:149 ] - [ INFO ]  Loading XML bean definitions from file [F:\workspace\2017\1023_jump\target\classes\spring\applicationContext-dao.xml]
+2017-11-03 13:38:56  [ localhost-startStop-1:326 ] - [ INFO ]  Loading XML bean definitions from file [F:\workspace\2017\1023_jump\target\classes\spring\applicationContext-service.xml]
+2017-11-03 13:38:56  [ localhost-startStop-1:401 ] - [ INFO ]  Loading XML bean definitions from file [F:\workspace\2017\1023_jump\target\classes\spring\applicationContext-trans.xml]
+2017-11-03 13:38:56  [ localhost-startStop-1:657 ] - [ WARN ]  No MyBatis mapper was found in '[com.jump.dao]' package. Please check your configuration.
+2017-11-03 13:38:56  [ localhost-startStop-1:674 ] - [ INFO ]  Loading properties file from class path resource [properties/db.properties]
+2017-11-03 13:38:56  [ localhost-startStop-1:702 ] - [ INFO ]  JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+2017-11-03 13:38:57  [ localhost-startStop-1:1437 ] - [ INFO ]  Root WebApplicationContext: initialization completed in 1435 ms
+2017-11-03 13:38:57  [ localhost-startStop-1:1479 ] - [ INFO ]  FrameworkServlet '1023_jump': initialization started
+2017-11-03 13:38:57  [ localhost-startStop-1:1488 ] - [ INFO ]  Refreshing WebApplicationContext for namespace '1023_jump-servlet': startup date [Fri Nov 03 13:38:57 CST 2017]; parent: Root WebApplicationContext
+2017-11-03 13:38:57  [ localhost-startStop-1:1490 ] - [ INFO ]  Loading XML bean definitions from class path resource [spring/springmvc.xml]
+2017-11-03 13:38:57  [ localhost-startStop-1:1733 ] - [ INFO ]  JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+2017-11-03 13:38:57  [ localhost-startStop-1:1993 ] - [ INFO ]  Mapped "{[/picUpload]}" onto public void com.jump.controller.ImageUpload.uploadTest()
+2017-11-03 13:38:58  [ localhost-startStop-1:2352 ] - [ INFO ]  Looking for @ControllerAdvice: WebApplicationContext for namespace '1023_jump-servlet': startup date [Fri Nov 03 13:38:57 CST 2017]; parent: Root WebApplicationContext
+2017-11-03 13:38:58  [ localhost-startStop-1:2418 ] - [ INFO ]  Looking for @ControllerAdvice: WebApplicationContext for namespace '1023_jump-servlet': startup date [Fri Nov 03 13:38:57 CST 2017]; parent: Root WebApplicationContext
+2017-11-03 13:38:58  [ localhost-startStop-1:2577 ] - [ INFO ]  Mapped URL path [/**] onto handler 'org.springframework.web.servlet.resource.DefaultServletHttpRequestHandler#0'
+2017-11-03 13:38:58  [ localhost-startStop-1:2659 ] - [ INFO ]  FrameworkServlet '1023_jump': initialization completed in 1180 ms
+2017-11-03 13:45:30  [ localhost-startStop-1:0 ] - [ INFO ]  Root WebApplicationContext: initialization started
+2017-11-03 13:45:30  [ localhost-startStop-1:143 ] - [ INFO ]  Refreshing Root WebApplicationContext: startup date [Fri Nov 03 13:45:30 CST 2017]; root of context hierarchy
+2017-11-03 13:45:30  [ localhost-startStop-1:217 ] - [ INFO ]  Loading XML bean definitions from file [F:\workspace\2017\1023_jump\target\classes\spring\applicationContext-dao.xml]
+2017-11-03 13:45:30  [ localhost-startStop-1:415 ] - [ INFO ]  Loading XML bean definitions from file [F:\workspace\2017\1023_jump\target\classes\spring\applicationContext-service.xml]
+2017-11-03 13:45:30  [ localhost-startStop-1:521 ] - [ INFO ]  Loading XML bean definitions from file [F:\workspace\2017\1023_jump\target\classes\spring\applicationContext-trans.xml]
+2017-11-03 13:45:31  [ localhost-startStop-1:835 ] - [ WARN ]  No MyBatis mapper was found in '[com.jump.dao]' package. Please check your configuration.
+2017-11-03 13:45:31  [ localhost-startStop-1:851 ] - [ INFO ]  Loading properties file from class path resource [properties/db.properties]
+2017-11-03 13:45:31  [ localhost-startStop-1:877 ] - [ INFO ]  JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+2017-11-03 13:45:32  [ localhost-startStop-1:1833 ] - [ INFO ]  Root WebApplicationContext: initialization completed in 1830 ms
+2017-11-03 13:45:32  [ localhost-startStop-1:1888 ] - [ INFO ]  FrameworkServlet '1023_jump': initialization started
+2017-11-03 13:45:32  [ localhost-startStop-1:1899 ] - [ INFO ]  Refreshing WebApplicationContext for namespace '1023_jump-servlet': startup date [Fri Nov 03 13:45:32 CST 2017]; parent: Root WebApplicationContext
+2017-11-03 13:45:32  [ localhost-startStop-1:1902 ] - [ INFO ]  Loading XML bean definitions from class path resource [spring/springmvc.xml]
+2017-11-03 13:45:32  [ localhost-startStop-1:2182 ] - [ INFO ]  JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+2017-11-03 13:45:32  [ localhost-startStop-1:2433 ] - [ INFO ]  Mapped "{[/picUpload]}" onto public void com.jump.controller.ImageUpload.uploadTest(org.springframework.web.multipart.MultipartFile)
+2017-11-03 13:45:33  [ localhost-startStop-1:2947 ] - [ INFO ]  Looking for @ControllerAdvice: WebApplicationContext for namespace '1023_jump-servlet': startup date [Fri Nov 03 13:45:32 CST 2017]; parent: Root WebApplicationContext
+2017-11-03 13:45:33  [ localhost-startStop-1:3033 ] - [ INFO ]  Looking for @ControllerAdvice: WebApplicationContext for namespace '1023_jump-servlet': startup date [Fri Nov 03 13:45:32 CST 2017]; parent: Root WebApplicationContext
+2017-11-03 13:45:33  [ localhost-startStop-1:3197 ] - [ INFO ]  Mapped URL path [/**] onto handler 'org.springframework.web.servlet.resource.DefaultServletHttpRequestHandler#0'
+2017-11-03 13:45:33  [ localhost-startStop-1:3293 ] - [ INFO ]  FrameworkServlet '1023_jump': initialization completed in 1404 ms
+2017-11-03 13:53:47  [ localhost-startStop-1:0 ] - [ INFO ]  Root WebApplicationContext: initialization started
+2017-11-03 13:53:47  [ localhost-startStop-1:175 ] - [ INFO ]  Refreshing Root WebApplicationContext: startup date [Fri Nov 03 13:53:47 CST 2017]; root of context hierarchy
+2017-11-03 13:53:47  [ localhost-startStop-1:257 ] - [ INFO ]  Loading XML bean definitions from file [F:\workspace\2017\1023_jump\target\classes\spring\applicationContext-dao.xml]
+2017-11-03 13:53:47  [ localhost-startStop-1:493 ] - [ INFO ]  Loading XML bean definitions from file [F:\workspace\2017\1023_jump\target\classes\spring\applicationContext-service.xml]
+2017-11-03 13:53:47  [ localhost-startStop-1:630 ] - [ INFO ]  Loading XML bean definitions from file [F:\workspace\2017\1023_jump\target\classes\spring\applicationContext-trans.xml]
+2017-11-03 13:53:48  [ localhost-startStop-1:1022 ] - [ WARN ]  No MyBatis mapper was found in '[com.jump.dao]' package. Please check your configuration.
+2017-11-03 13:53:48  [ localhost-startStop-1:1046 ] - [ INFO ]  Loading properties file from class path resource [properties/db.properties]
+2017-11-03 13:53:48  [ localhost-startStop-1:1078 ] - [ INFO ]  JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+2017-11-03 13:53:49  [ localhost-startStop-1:2123 ] - [ INFO ]  Root WebApplicationContext: initialization completed in 2119 ms
+2017-11-03 13:53:49  [ localhost-startStop-1:2178 ] - [ INFO ]  FrameworkServlet '1023_jump': initialization started
+2017-11-03 13:53:49  [ localhost-startStop-1:2188 ] - [ INFO ]  Refreshing WebApplicationContext for namespace '1023_jump-servlet': startup date [Fri Nov 03 13:53:49 CST 2017]; parent: Root WebApplicationContext
+2017-11-03 13:53:49  [ localhost-startStop-1:2190 ] - [ INFO ]  Loading XML bean definitions from class path resource [spring/springmvc.xml]
+2017-11-03 13:53:49  [ localhost-startStop-1:2535 ] - [ INFO ]  JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+2017-11-03 13:53:50  [ localhost-startStop-1:2825 ] - [ INFO ]  Mapped "{[/picUpload]}" onto public void com.jump.controller.ImageUpload.uploadTest(javax.servlet.http.HttpServletRequest) throws org.apache.commons.fileupload.FileUploadException
+2017-11-03 13:53:50  [ localhost-startStop-1:3591 ] - [ INFO ]  Looking for @ControllerAdvice: WebApplicationContext for namespace '1023_jump-servlet': startup date [Fri Nov 03 13:53:49 CST 2017]; parent: Root WebApplicationContext
+2017-11-03 13:53:51  [ localhost-startStop-1:3776 ] - [ INFO ]  Looking for @ControllerAdvice: WebApplicationContext for namespace '1023_jump-servlet': startup date [Fri Nov 03 13:53:49 CST 2017]; parent: Root WebApplicationContext
+2017-11-03 13:53:51  [ localhost-startStop-1:4066 ] - [ INFO ]  Mapped URL path [/**] onto handler 'org.springframework.web.servlet.resource.DefaultServletHttpRequestHandler#0'
+2017-11-03 13:53:51  [ localhost-startStop-1:4371 ] - [ INFO ]  FrameworkServlet '1023_jump': initialization completed in 2192 ms
+2017-11-03 13:55:53  [ localhost-startStop-1:0 ] - [ INFO ]  Root WebApplicationContext: initialization started
+2017-11-03 13:55:53  [ localhost-startStop-1:128 ] - [ INFO ]  Refreshing Root WebApplicationContext: startup date [Fri Nov 03 13:55:53 CST 2017]; root of context hierarchy
+2017-11-03 13:55:53  [ localhost-startStop-1:190 ] - [ INFO ]  Loading XML bean definitions from file [F:\workspace\2017\1023_jump\target\classes\spring\applicationContext-dao.xml]
+2017-11-03 13:55:53  [ localhost-startStop-1:366 ] - [ INFO ]  Loading XML bean definitions from file [F:\workspace\2017\1023_jump\target\classes\spring\applicationContext-service.xml]
+2017-11-03 13:55:53  [ localhost-startStop-1:459 ] - [ INFO ]  Loading XML bean definitions from file [F:\workspace\2017\1023_jump\target\classes\spring\applicationContext-trans.xml]
+2017-11-03 13:55:53  [ localhost-startStop-1:766 ] - [ WARN ]  No MyBatis mapper was found in '[com.jump.dao]' package. Please check your configuration.
+2017-11-03 13:55:53  [ localhost-startStop-1:794 ] - [ INFO ]  Loading properties file from class path resource [properties/db.properties]
+2017-11-03 13:55:54  [ localhost-startStop-1:824 ] - [ INFO ]  JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+2017-11-03 13:55:54  [ localhost-startStop-1:1724 ] - [ INFO ]  Root WebApplicationContext: initialization completed in 1720 ms
+2017-11-03 13:55:54  [ localhost-startStop-1:1791 ] - [ INFO ]  FrameworkServlet '1023_jump': initialization started
+2017-11-03 13:55:55  [ localhost-startStop-1:1802 ] - [ INFO ]  Refreshing WebApplicationContext for namespace '1023_jump-servlet': startup date [Fri Nov 03 13:55:55 CST 2017]; parent: Root WebApplicationContext
+2017-11-03 13:55:55  [ localhost-startStop-1:1803 ] - [ INFO ]  Loading XML bean definitions from class path resource [spring/springmvc.xml]
+2017-11-03 13:55:55  [ localhost-startStop-1:2077 ] - [ INFO ]  JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+2017-11-03 13:55:55  [ localhost-startStop-1:2397 ] - [ INFO ]  Mapped "{[/picUpload]}" onto public void com.jump.controller.ImageUpload.uploadTest(javax.servlet.http.HttpServletRequest) throws org.apache.commons.fileupload.FileUploadException
+2017-11-03 13:55:56  [ localhost-startStop-1:2870 ] - [ INFO ]  Looking for @ControllerAdvice: WebApplicationContext for namespace '1023_jump-servlet': startup date [Fri Nov 03 13:55:55 CST 2017]; parent: Root WebApplicationContext
+2017-11-03 13:55:56  [ localhost-startStop-1:2967 ] - [ INFO ]  Looking for @ControllerAdvice: WebApplicationContext for namespace '1023_jump-servlet': startup date [Fri Nov 03 13:55:55 CST 2017]; parent: Root WebApplicationContext
+2017-11-03 13:55:56  [ localhost-startStop-1:3143 ] - [ INFO ]  Mapped URL path [/**] onto handler 'org.springframework.web.servlet.resource.DefaultServletHttpRequestHandler#0'
+2017-11-03 13:55:56  [ localhost-startStop-1:3258 ] - [ INFO ]  FrameworkServlet '1023_jump': initialization completed in 1467 ms
+2017-11-03 14:13:37  [ localhost-startStop-1:0 ] - [ INFO ]  Root WebApplicationContext: initialization started
+2017-11-03 14:13:38  [ localhost-startStop-1:133 ] - [ INFO ]  Refreshing Root WebApplicationContext: startup date [Fri Nov 03 14:13:38 CST 2017]; root of context hierarchy
+2017-11-03 14:13:38  [ localhost-startStop-1:194 ] - [ INFO ]  Loading XML bean definitions from file [F:\workspace\2017\1023_jump\target\classes\spring\applicationContext-dao.xml]
+2017-11-03 14:13:38  [ localhost-startStop-1:385 ] - [ INFO ]  Loading XML bean definitions from file [F:\workspace\2017\1023_jump\target\classes\spring\applicationContext-service.xml]
+2017-11-03 14:13:38  [ localhost-startStop-1:488 ] - [ INFO ]  Loading XML bean definitions from file [F:\workspace\2017\1023_jump\target\classes\spring\applicationContext-trans.xml]
+2017-11-03 14:13:38  [ localhost-startStop-1:842 ] - [ WARN ]  No MyBatis mapper was found in '[com.jump.dao]' package. Please check your configuration.
+2017-11-03 14:13:38  [ localhost-startStop-1:868 ] - [ INFO ]  Loading properties file from class path resource [properties/db.properties]
+2017-11-03 14:13:38  [ localhost-startStop-1:901 ] - [ INFO ]  JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+2017-11-03 14:13:39  [ localhost-startStop-1:1787 ] - [ INFO ]  Root WebApplicationContext: initialization completed in 1783 ms
+2017-11-03 14:13:39  [ localhost-startStop-1:1850 ] - [ INFO ]  FrameworkServlet '1023_jump': initialization started
+2017-11-03 14:13:39  [ localhost-startStop-1:1860 ] - [ INFO ]  Refreshing WebApplicationContext for namespace '1023_jump-servlet': startup date [Fri Nov 03 14:13:39 CST 2017]; parent: Root WebApplicationContext
+2017-11-03 14:13:39  [ localhost-startStop-1:1863 ] - [ INFO ]  Loading XML bean definitions from class path resource [spring/springmvc.xml]
+2017-11-03 14:13:40  [ localhost-startStop-1:2156 ] - [ INFO ]  JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+2017-11-03 14:13:40  [ localhost-startStop-1:2450 ] - [ INFO ]  Mapped "{[/picUpload]}" onto public void com.jump.controller.ImageUpload.uploadTest(javax.servlet.http.HttpServletRequest) throws org.apache.commons.fileupload.FileUploadException
+2017-11-03 14:13:40  [ localhost-startStop-1:2971 ] - [ INFO ]  Looking for @ControllerAdvice: WebApplicationContext for namespace '1023_jump-servlet': startup date [Fri Nov 03 14:13:39 CST 2017]; parent: Root WebApplicationContext
+2017-11-03 14:13:41  [ localhost-startStop-1:3083 ] - [ INFO ]  Looking for @ControllerAdvice: WebApplicationContext for namespace '1023_jump-servlet': startup date [Fri Nov 03 14:13:39 CST 2017]; parent: Root WebApplicationContext
+2017-11-03 14:13:41  [ localhost-startStop-1:3304 ] - [ INFO ]  Mapped URL path [/**] onto handler 'org.springframework.web.servlet.resource.DefaultServletHttpRequestHandler#0'
+2017-11-03 14:13:41  [ localhost-startStop-1:3408 ] - [ INFO ]  FrameworkServlet '1023_jump': initialization completed in 1558 ms
+2017-11-03 14:50:19  [ localhost-startStop-1:0 ] - [ INFO ]  Root WebApplicationContext: initialization started
+2017-11-03 14:50:19  [ localhost-startStop-1:162 ] - [ INFO ]  Refreshing Root WebApplicationContext: startup date [Fri Nov 03 14:50:19 CST 2017]; root of context hierarchy
+2017-11-03 14:50:19  [ localhost-startStop-1:236 ] - [ INFO ]  Loading XML bean definitions from file [F:\workspace\2017\1023_jump\target\classes\spring\applicationContext-dao.xml]
+2017-11-03 14:50:20  [ localhost-startStop-1:480 ] - [ INFO ]  Loading XML bean definitions from file [F:\workspace\2017\1023_jump\target\classes\spring\applicationContext-service.xml]
+2017-11-03 14:50:20  [ localhost-startStop-1:637 ] - [ INFO ]  Loading XML bean definitions from file [F:\workspace\2017\1023_jump\target\classes\spring\applicationContext-trans.xml]
+2017-11-03 14:50:20  [ localhost-startStop-1:1042 ] - [ WARN ]  No MyBatis mapper was found in '[com.jump.dao]' package. Please check your configuration.
+2017-11-03 14:50:20  [ localhost-startStop-1:1066 ] - [ INFO ]  Loading properties file from class path resource [properties/db.properties]
+2017-11-03 14:50:20  [ localhost-startStop-1:1107 ] - [ INFO ]  JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+2017-11-03 14:50:21  [ localhost-startStop-1:2232 ] - [ INFO ]  Root WebApplicationContext: initialization completed in 2228 ms
+2017-11-03 14:50:22  [ localhost-startStop-1:2296 ] - [ INFO ]  FrameworkServlet '1023_jump': initialization started
+2017-11-03 14:50:22  [ localhost-startStop-1:2307 ] - [ INFO ]  Refreshing WebApplicationContext for namespace '1023_jump-servlet': startup date [Fri Nov 03 14:50:22 CST 2017]; parent: Root WebApplicationContext
+2017-11-03 14:50:22  [ localhost-startStop-1:2310 ] - [ INFO ]  Loading XML bean definitions from class path resource [spring/springmvc.xml]
+2017-11-03 14:50:22  [ localhost-startStop-1:2613 ] - [ INFO ]  JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+2017-11-03 14:50:23  [ localhost-startStop-1:3529 ] - [ INFO ]  Looking for @ControllerAdvice: WebApplicationContext for namespace '1023_jump-servlet': startup date [Fri Nov 03 14:50:22 CST 2017]; parent: Root WebApplicationContext
+2017-11-03 14:50:23  [ localhost-startStop-1:3675 ] - [ INFO ]  Looking for @ControllerAdvice: WebApplicationContext for namespace '1023_jump-servlet': startup date [Fri Nov 03 14:50:22 CST 2017]; parent: Root WebApplicationContext
+2017-11-03 14:50:23  [ localhost-startStop-1:3913 ] - [ INFO ]  Mapped URL path [/**] onto handler 'org.springframework.web.servlet.resource.DefaultServletHttpRequestHandler#0'
+2017-11-03 14:50:23  [ localhost-startStop-1:4147 ] - [ INFO ]  FrameworkServlet '1023_jump': initialization completed in 1850 ms
+2017-11-03 14:51:39  [ localhost-startStop-1:0 ] - [ INFO ]  Root WebApplicationContext: initialization started
+2017-11-03 14:51:39  [ localhost-startStop-1:151 ] - [ INFO ]  Refreshing Root WebApplicationContext: startup date [Fri Nov 03 14:51:39 CST 2017]; root of context hierarchy
+2017-11-03 14:51:40  [ localhost-startStop-1:232 ] - [ INFO ]  Loading XML bean definitions from file [F:\workspace\2017\1023_jump\target\classes\spring\applicationContext-dao.xml]
+2017-11-03 14:51:40  [ localhost-startStop-1:447 ] - [ INFO ]  Loading XML bean definitions from file [F:\workspace\2017\1023_jump\target\classes\spring\applicationContext-service.xml]
+2017-11-03 14:51:40  [ localhost-startStop-1:567 ] - [ INFO ]  Loading XML bean definitions from file [F:\workspace\2017\1023_jump\target\classes\spring\applicationContext-trans.xml]
+2017-11-03 14:51:40  [ localhost-startStop-1:891 ] - [ WARN ]  No MyBatis mapper was found in '[com.jump.dao]' package. Please check your configuration.
+2017-11-03 14:51:40  [ localhost-startStop-1:913 ] - [ INFO ]  Loading properties file from class path resource [properties/db.properties]
+2017-11-03 14:51:40  [ localhost-startStop-1:949 ] - [ INFO ]  JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+2017-11-03 14:51:41  [ localhost-startStop-1:2144 ] - [ INFO ]  Root WebApplicationContext: initialization completed in 2140 ms
+2017-11-03 14:51:41  [ localhost-startStop-1:2202 ] - [ INFO ]  FrameworkServlet '1023_jump': initialization started
+2017-11-03 14:51:41  [ localhost-startStop-1:2215 ] - [ INFO ]  Refreshing WebApplicationContext for namespace '1023_jump-servlet': startup date [Fri Nov 03 14:51:41 CST 2017]; parent: Root WebApplicationContext
+2017-11-03 14:51:41  [ localhost-startStop-1:2219 ] - [ INFO ]  Loading XML bean definitions from class path resource [spring/springmvc.xml]
+2017-11-03 14:51:42  [ localhost-startStop-1:2606 ] - [ INFO ]  JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+2017-11-03 14:51:42  [ localhost-startStop-1:2903 ] - [ INFO ]  Mapped "{[/picUpload]}" onto public void com.jump.controller.ImageUpload.uploadTest(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse,org.springframework.web.multipart.MultipartFile[])
+2017-11-03 14:51:43  [ localhost-startStop-1:3733 ] - [ INFO ]  Looking for @ControllerAdvice: WebApplicationContext for namespace '1023_jump-servlet': startup date [Fri Nov 03 14:51:41 CST 2017]; parent: Root WebApplicationContext
+2017-11-03 14:51:43  [ localhost-startStop-1:3979 ] - [ INFO ]  Looking for @ControllerAdvice: WebApplicationContext for namespace '1023_jump-servlet': startup date [Fri Nov 03 14:51:41 CST 2017]; parent: Root WebApplicationContext
+2017-11-03 14:51:44  [ localhost-startStop-1:4483 ] - [ INFO ]  Mapped URL path [/**] onto handler 'org.springframework.web.servlet.resource.DefaultServletHttpRequestHandler#0'
+2017-11-03 14:51:44  [ localhost-startStop-1:4770 ] - [ INFO ]  FrameworkServlet '1023_jump': initialization completed in 2567 ms
+2017-11-03 15:08:03  [ localhost-startStop-1:0 ] - [ INFO ]  Root WebApplicationContext: initialization started
+2017-11-03 15:08:03  [ localhost-startStop-1:154 ] - [ INFO ]  Refreshing Root WebApplicationContext: startup date [Fri Nov 03 15:08:03 CST 2017]; root of context hierarchy
+2017-11-03 15:08:03  [ localhost-startStop-1:219 ] - [ INFO ]  Loading XML bean definitions from file [F:\workspace\2017\1023_jump\target\classes\spring\applicationContext-dao.xml]
+2017-11-03 15:08:04  [ localhost-startStop-1:445 ] - [ INFO ]  Loading XML bean definitions from file [F:\workspace\2017\1023_jump\target\classes\spring\applicationContext-service.xml]
+2017-11-03 15:08:04  [ localhost-startStop-1:560 ] - [ INFO ]  Loading XML bean definitions from file [F:\workspace\2017\1023_jump\target\classes\spring\applicationContext-trans.xml]
+2017-11-03 15:08:04  [ localhost-startStop-1:948 ] - [ WARN ]  No MyBatis mapper was found in '[com.jump.dao]' package. Please check your configuration.
+2017-11-03 15:08:04  [ localhost-startStop-1:974 ] - [ INFO ]  Loading properties file from class path resource [properties/db.properties]
+2017-11-03 15:08:04  [ localhost-startStop-1:1012 ] - [ INFO ]  JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+2017-11-03 15:08:05  [ localhost-startStop-1:2193 ] - [ INFO ]  Root WebApplicationContext: initialization completed in 2189 ms
+2017-11-03 15:08:06  [ localhost-startStop-1:2263 ] - [ INFO ]  FrameworkServlet '1023_jump': initialization started
+2017-11-03 15:08:06  [ localhost-startStop-1:2277 ] - [ INFO ]  Refreshing WebApplicationContext for namespace '1023_jump-servlet': startup date [Fri Nov 03 15:08:06 CST 2017]; parent: Root WebApplicationContext
+2017-11-03 15:08:06  [ localhost-startStop-1:2280 ] - [ INFO ]  Loading XML bean definitions from class path resource [spring/springmvc.xml]
+2017-11-03 15:08:06  [ localhost-startStop-1:2666 ] - [ INFO ]  JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+2017-11-03 15:08:06  [ localhost-startStop-1:2982 ] - [ INFO ]  Mapped "{[/picUpload]}" onto public void com.jump.controller.ImageUpload.uploadTest(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse,org.springframework.web.multipart.MultipartFile[]) throws java.lang.IllegalStateException,java.io.IOException
+2017-11-03 15:08:07  [ localhost-startStop-1:3650 ] - [ INFO ]  Looking for @ControllerAdvice: WebApplicationContext for namespace '1023_jump-servlet': startup date [Fri Nov 03 15:08:06 CST 2017]; parent: Root WebApplicationContext
+2017-11-03 15:08:07  [ localhost-startStop-1:3860 ] - [ INFO ]  Looking for @ControllerAdvice: WebApplicationContext for namespace '1023_jump-servlet': startup date [Fri Nov 03 15:08:06 CST 2017]; parent: Root WebApplicationContext
+2017-11-03 15:08:08  [ localhost-startStop-1:4225 ] - [ INFO ]  Mapped URL path [/**] onto handler 'org.springframework.web.servlet.resource.DefaultServletHttpRequestHandler#0'
+2017-11-03 15:08:08  [ localhost-startStop-1:4519 ] - [ INFO ]  FrameworkServlet '1023_jump': initialization completed in 2255 ms
+2017-11-03 15:09:55  [ localhost-startStop-1:0 ] - [ INFO ]  Root WebApplicationContext: initialization started
+2017-11-03 15:09:55  [ localhost-startStop-1:112 ] - [ INFO ]  Refreshing Root WebApplicationContext: startup date [Fri Nov 03 15:09:55 CST 2017]; root of context hierarchy
+2017-11-03 15:09:55  [ localhost-startStop-1:190 ] - [ INFO ]  Loading XML bean definitions from file [F:\workspace\2017\1023_jump\target\classes\spring\applicationContext-dao.xml]
+2017-11-03 15:09:55  [ localhost-startStop-1:481 ] - [ INFO ]  Loading XML bean definitions from file [F:\workspace\2017\1023_jump\target\classes\spring\applicationContext-service.xml]
+2017-11-03 15:09:55  [ localhost-startStop-1:592 ] - [ INFO ]  Loading XML bean definitions from file [F:\workspace\2017\1023_jump\target\classes\spring\applicationContext-trans.xml]
+2017-11-03 15:09:56  [ localhost-startStop-1:912 ] - [ WARN ]  No MyBatis mapper was found in '[com.jump.dao]' package. Please check your configuration.
+2017-11-03 15:09:56  [ localhost-startStop-1:928 ] - [ INFO ]  Loading properties file from class path resource [properties/db.properties]
+2017-11-03 15:09:56  [ localhost-startStop-1:957 ] - [ INFO ]  JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+2017-11-03 15:09:57  [ localhost-startStop-1:2185 ] - [ INFO ]  Root WebApplicationContext: initialization completed in 2180 ms
+2017-11-03 15:09:57  [ localhost-startStop-1:2259 ] - [ INFO ]  FrameworkServlet '1023_jump': initialization started
+2017-11-03 15:09:57  [ localhost-startStop-1:2273 ] - [ INFO ]  Refreshing WebApplicationContext for namespace '1023_jump-servlet': startup date [Fri Nov 03 15:09:57 CST 2017]; parent: Root WebApplicationContext
+2017-11-03 15:09:57  [ localhost-startStop-1:2277 ] - [ INFO ]  Loading XML bean definitions from class path resource [spring/springmvc.xml]
+2017-11-03 15:09:57  [ localhost-startStop-1:2660 ] - [ INFO ]  JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+2017-11-03 15:09:58  [ localhost-startStop-1:3067 ] - [ INFO ]  Mapped "{[/picUpload]}" onto public void com.jump.controller.ImageUpload.uploadTest(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse,org.springframework.web.multipart.MultipartFile[]) throws java.lang.IllegalStateException,java.io.IOException
+2017-11-03 15:09:59  [ localhost-startStop-1:3782 ] - [ INFO ]  Looking for @ControllerAdvice: WebApplicationContext for namespace '1023_jump-servlet': startup date [Fri Nov 03 15:09:57 CST 2017]; parent: Root WebApplicationContext
+2017-11-03 15:09:59  [ localhost-startStop-1:3948 ] - [ INFO ]  Looking for @ControllerAdvice: WebApplicationContext for namespace '1023_jump-servlet': startup date [Fri Nov 03 15:09:57 CST 2017]; parent: Root WebApplicationContext
+2017-11-03 15:09:59  [ localhost-startStop-1:4353 ] - [ INFO ]  Mapped URL path [/**] onto handler 'org.springframework.web.servlet.resource.DefaultServletHttpRequestHandler#0'
+2017-11-03 15:09:59  [ localhost-startStop-1:4739 ] - [ INFO ]  FrameworkServlet '1023_jump': initialization completed in 2479 ms
+2017-11-03 15:27:44  [ localhost-startStop-1:0 ] - [ INFO ]  Root WebApplicationContext: initialization started
+2017-11-03 15:27:44  [ localhost-startStop-1:125 ] - [ INFO ]  Refreshing Root WebApplicationContext: startup date [Fri Nov 03 15:27:44 CST 2017]; root of context hierarchy
+2017-11-03 15:27:44  [ localhost-startStop-1:188 ] - [ INFO ]  Loading XML bean definitions from file [F:\workspace\2017\1023_jump\target\classes\spring\applicationContext-dao.xml]
+2017-11-03 15:27:44  [ localhost-startStop-1:365 ] - [ INFO ]  Loading XML bean definitions from file [F:\workspace\2017\1023_jump\target\classes\spring\applicationContext-service.xml]
+2017-11-03 15:27:44  [ localhost-startStop-1:476 ] - [ INFO ]  Loading XML bean definitions from file [F:\workspace\2017\1023_jump\target\classes\spring\applicationContext-trans.xml]
+2017-11-03 15:27:45  [ localhost-startStop-1:794 ] - [ WARN ]  No MyBatis mapper was found in '[com.jump.dao]' package. Please check your configuration.
+2017-11-03 15:27:45  [ localhost-startStop-1:817 ] - [ INFO ]  Loading properties file from class path resource [properties/db.properties]
+2017-11-03 15:27:45  [ localhost-startStop-1:848 ] - [ INFO ]  JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+2017-11-03 15:27:46  [ localhost-startStop-1:1798 ] - [ INFO ]  Root WebApplicationContext: initialization completed in 1794 ms
+2017-11-03 15:27:46  [ localhost-startStop-1:1863 ] - [ INFO ]  FrameworkServlet '1023_jump': initialization started
+2017-11-03 15:27:46  [ localhost-startStop-1:1874 ] - [ INFO ]  Refreshing WebApplicationContext for namespace '1023_jump-servlet': startup date [Fri Nov 03 15:27:46 CST 2017]; parent: Root WebApplicationContext
+2017-11-03 15:27:46  [ localhost-startStop-1:1877 ] - [ INFO ]  Loading XML bean definitions from class path resource [spring/springmvc.xml]
+2017-11-03 15:27:46  [ localhost-startStop-1:2167 ] - [ INFO ]  JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+2017-11-03 15:27:46  [ localhost-startStop-1:2434 ] - [ INFO ]  Mapped "{[/picUpload]}" onto public void com.jump.controller.ImageUpload.uploadTest(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse,org.springframework.web.multipart.MultipartFile[]) throws java.lang.IllegalStateException,java.io.IOException
+2017-11-03 15:27:47  [ localhost-startStop-1:2949 ] - [ INFO ]  Looking for @ControllerAdvice: WebApplicationContext for namespace '1023_jump-servlet': startup date [Fri Nov 03 15:27:46 CST 2017]; parent: Root WebApplicationContext
+2017-11-03 15:27:47  [ localhost-startStop-1:3038 ] - [ INFO ]  Looking for @ControllerAdvice: WebApplicationContext for namespace '1023_jump-servlet': startup date [Fri Nov 03 15:27:46 CST 2017]; parent: Root WebApplicationContext
+2017-11-03 15:27:47  [ localhost-startStop-1:3173 ] - [ INFO ]  Mapped URL path [/**] onto handler 'org.springframework.web.servlet.resource.DefaultServletHttpRequestHandler#0'
+2017-11-03 15:27:47  [ localhost-startStop-1:3290 ] - [ INFO ]  FrameworkServlet '1023_jump': initialization completed in 1426 ms
+2017-11-03 15:42:53  [ localhost-startStop-1:0 ] - [ INFO ]  Root WebApplicationContext: initialization started
+2017-11-03 15:42:53  [ localhost-startStop-1:122 ] - [ INFO ]  Refreshing Root WebApplicationContext: startup date [Fri Nov 03 15:42:53 CST 2017]; root of context hierarchy
+2017-11-03 15:42:53  [ localhost-startStop-1:176 ] - [ INFO ]  Loading XML bean definitions from file [F:\workspace\2017\1023_jump\target\classes\spring\applicationContext-dao.xml]
+2017-11-03 15:42:53  [ localhost-startStop-1:389 ] - [ INFO ]  Loading XML bean definitions from file [F:\workspace\2017\1023_jump\target\classes\spring\applicationContext-service.xml]
+2017-11-03 15:42:53  [ localhost-startStop-1:520 ] - [ INFO ]  Loading XML bean definitions from file [F:\workspace\2017\1023_jump\target\classes\spring\applicationContext-trans.xml]
+2017-11-03 15:42:54  [ localhost-startStop-1:891 ] - [ WARN ]  No MyBatis mapper was found in '[com.jump.dao]' package. Please check your configuration.
+2017-11-03 15:42:54  [ localhost-startStop-1:916 ] - [ INFO ]  Loading properties file from class path resource [properties/db.properties]
+2017-11-03 15:42:54  [ localhost-startStop-1:948 ] - [ INFO ]  JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+2017-11-03 15:42:55  [ localhost-startStop-1:2102 ] - [ INFO ]  Root WebApplicationContext: initialization completed in 2099 ms
+2017-11-03 15:42:55  [ localhost-startStop-1:2180 ] - [ INFO ]  FrameworkServlet '1023_jump': initialization started
+2017-11-03 15:42:55  [ localhost-startStop-1:2194 ] - [ INFO ]  Refreshing WebApplicationContext for namespace '1023_jump-servlet': startup date [Fri Nov 03 15:42:55 CST 2017]; parent: Root WebApplicationContext
+2017-11-03 15:42:55  [ localhost-startStop-1:2197 ] - [ INFO ]  Loading XML bean definitions from class path resource [spring/springmvc.xml]
+2017-11-03 15:42:55  [ localhost-startStop-1:2588 ] - [ INFO ]  JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+2017-11-03 15:42:56  [ localhost-startStop-1:2939 ] - [ INFO ]  Mapped "{[/picUpload]}" onto public void com.jump.controller.ImageUpload.uploadTest(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse,org.springframework.web.multipart.MultipartFile[]) throws java.lang.IllegalStateException,java.io.IOException
+2017-11-03 15:42:57  [ localhost-startStop-1:3717 ] - [ INFO ]  Looking for @ControllerAdvice: WebApplicationContext for namespace '1023_jump-servlet': startup date [Fri Nov 03 15:42:55 CST 2017]; parent: Root WebApplicationContext
+2017-11-03 15:42:57  [ localhost-startStop-1:3879 ] - [ INFO ]  Looking for @ControllerAdvice: WebApplicationContext for namespace '1023_jump-servlet': startup date [Fri Nov 03 15:42:55 CST 2017]; parent: Root WebApplicationContext
+2017-11-03 15:42:57  [ localhost-startStop-1:4241 ] - [ INFO ]  Mapped URL path [/**] onto handler 'org.springframework.web.servlet.resource.DefaultServletHttpRequestHandler#0'
+2017-11-03 15:42:58  [ localhost-startStop-1:4601 ] - [ INFO ]  FrameworkServlet '1023_jump': initialization completed in 2420 ms
+2017-11-03 15:44:49  [ localhost-startStop-1:0 ] - [ INFO ]  Root WebApplicationContext: initialization started
+2017-11-03 15:44:49  [ localhost-startStop-1:100 ] - [ INFO ]  Refreshing Root WebApplicationContext: startup date [Fri Nov 03 15:44:49 CST 2017]; root of context hierarchy
+2017-11-03 15:44:49  [ localhost-startStop-1:151 ] - [ INFO ]  Loading XML bean definitions from file [F:\workspace\2017\1023_jump\target\classes\spring\applicationContext-dao.xml]
+2017-11-03 15:44:50  [ localhost-startStop-1:315 ] - [ INFO ]  Loading XML bean definitions from file [F:\workspace\2017\1023_jump\target\classes\spring\applicationContext-service.xml]
+2017-11-03 15:44:50  [ localhost-startStop-1:395 ] - [ INFO ]  Loading XML bean definitions from file [F:\workspace\2017\1023_jump\target\classes\spring\applicationContext-trans.xml]
+2017-11-03 15:44:50  [ localhost-startStop-1:644 ] - [ WARN ]  No MyBatis mapper was found in '[com.jump.dao]' package. Please check your configuration.
+2017-11-03 15:44:50  [ localhost-startStop-1:667 ] - [ INFO ]  Loading properties file from class path resource [properties/db.properties]
+2017-11-03 15:44:50  [ localhost-startStop-1:695 ] - [ INFO ]  JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+2017-11-03 15:44:51  [ localhost-startStop-1:1441 ] - [ INFO ]  Root WebApplicationContext: initialization completed in 1439 ms
+2017-11-03 15:44:51  [ localhost-startStop-1:1482 ] - [ INFO ]  FrameworkServlet '1023_jump': initialization started
+2017-11-03 15:44:51  [ localhost-startStop-1:1491 ] - [ INFO ]  Refreshing WebApplicationContext for namespace '1023_jump-servlet': startup date [Fri Nov 03 15:44:51 CST 2017]; parent: Root WebApplicationContext
+2017-11-03 15:44:51  [ localhost-startStop-1:1492 ] - [ INFO ]  Loading XML bean definitions from class path resource [spring/springmvc.xml]
+2017-11-03 15:44:51  [ localhost-startStop-1:1704 ] - [ INFO ]  JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+2017-11-03 15:44:51  [ localhost-startStop-1:1964 ] - [ INFO ]  Mapped "{[/picUpload]}" onto public void com.jump.controller.ImageUpload.uploadTest(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse,org.springframework.web.multipart.MultipartFile[]) throws java.lang.IllegalStateException,java.io.IOException
+2017-11-03 15:44:52  [ localhost-startStop-1:2360 ] - [ INFO ]  Looking for @ControllerAdvice: WebApplicationContext for namespace '1023_jump-servlet': startup date [Fri Nov 03 15:44:51 CST 2017]; parent: Root WebApplicationContext
+2017-11-03 15:44:52  [ localhost-startStop-1:2425 ] - [ INFO ]  Looking for @ControllerAdvice: WebApplicationContext for namespace '1023_jump-servlet': startup date [Fri Nov 03 15:44:51 CST 2017]; parent: Root WebApplicationContext
+2017-11-03 15:44:52  [ localhost-startStop-1:2538 ] - [ INFO ]  Mapped URL path [/**] onto handler 'org.springframework.web.servlet.resource.DefaultServletHttpRequestHandler#0'
+2017-11-03 15:44:52  [ localhost-startStop-1:2634 ] - [ INFO ]  FrameworkServlet '1023_jump': initialization completed in 1151 ms
+2017-11-03 18:02:05  [ localhost-startStop-1:0 ] - [ INFO ]  Root WebApplicationContext: initialization started
+2017-11-03 18:02:05  [ localhost-startStop-1:106 ] - [ INFO ]  Refreshing Root WebApplicationContext: startup date [Fri Nov 03 18:02:05 CST 2017]; root of context hierarchy
+2017-11-03 18:02:05  [ localhost-startStop-1:175 ] - [ INFO ]  Loading XML bean definitions from file [F:\workspace\2017\1023_jump\target\classes\spring\applicationContext-dao.xml]
+2017-11-03 18:02:05  [ localhost-startStop-1:369 ] - [ INFO ]  Loading XML bean definitions from file [F:\workspace\2017\1023_jump\target\classes\spring\applicationContext-service.xml]
+2017-11-03 18:02:05  [ localhost-startStop-1:464 ] - [ INFO ]  Loading XML bean definitions from file [F:\workspace\2017\1023_jump\target\classes\spring\applicationContext-trans.xml]
+2017-11-03 18:02:05  [ localhost-startStop-1:759 ] - [ WARN ]  No MyBatis mapper was found in '[com.jump.dao]' package. Please check your configuration.
+2017-11-03 18:02:05  [ localhost-startStop-1:784 ] - [ INFO ]  Loading properties file from class path resource [properties/db.properties]
+2017-11-03 18:02:06  [ localhost-startStop-1:815 ] - [ INFO ]  JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+2017-11-03 18:02:07  [ localhost-startStop-1:1796 ] - [ INFO ]  Root WebApplicationContext: initialization completed in 1794 ms
+2017-11-03 18:02:07  [ localhost-startStop-1:1839 ] - [ INFO ]  FrameworkServlet '1023_jump': initialization started
+2017-11-03 18:02:07  [ localhost-startStop-1:1847 ] - [ INFO ]  Refreshing WebApplicationContext for namespace '1023_jump-servlet': startup date [Fri Nov 03 18:02:07 CST 2017]; parent: Root WebApplicationContext
+2017-11-03 18:02:07  [ localhost-startStop-1:1849 ] - [ INFO ]  Loading XML bean definitions from class path resource [spring/springmvc.xml]
+2017-11-03 18:02:07  [ localhost-startStop-1:2094 ] - [ INFO ]  JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+2017-11-03 18:02:07  [ localhost-startStop-1:2405 ] - [ INFO ]  Mapped "{[/picUpload]}" onto public void com.jump.controller.ImageUpload.uploadTest(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse,org.springframework.web.multipart.MultipartFile[]) throws java.lang.IllegalStateException,java.io.IOException
+2017-11-03 18:02:08  [ localhost-startStop-1:2876 ] - [ INFO ]  Looking for @ControllerAdvice: WebApplicationContext for namespace '1023_jump-servlet': startup date [Fri Nov 03 18:02:07 CST 2017]; parent: Root WebApplicationContext
+2017-11-03 18:02:08  [ localhost-startStop-1:2959 ] - [ INFO ]  Looking for @ControllerAdvice: WebApplicationContext for namespace '1023_jump-servlet': startup date [Fri Nov 03 18:02:07 CST 2017]; parent: Root WebApplicationContext
+2017-11-03 18:02:08  [ localhost-startStop-1:3110 ] - [ INFO ]  Mapped URL path [/**] onto handler 'org.springframework.web.servlet.resource.DefaultServletHttpRequestHandler#0'
+2017-11-03 18:02:08  [ localhost-startStop-1:3227 ] - [ INFO ]  FrameworkServlet '1023_jump': initialization completed in 1387 ms

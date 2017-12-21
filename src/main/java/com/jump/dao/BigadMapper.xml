@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.jump.dao.BigadMapper" >
+  <resultMap id="BaseResultMap" type="com.jump.pojo.Bigad" >
+    <id column="bigad_id" property="bigadId" jdbcType="INTEGER" />
+    <result column="bigad_pic" property="bigadPic" jdbcType="VARCHAR" />
+    <result column="bigad_front" property="bigadFront" jdbcType="INTEGER" />
+  </resultMap>
+  <sql id="Example_Where_Clause" >
+    <where >
+      <foreach collection="oredCriteria" item="criteria" separator="or" >
+        <if test="criteria.valid" >
+          <trim prefix="(" suffix=")" prefixOverrides="and" >
+            <foreach collection="criteria.criteria" item="criterion" >
+              <choose >
+                <when test="criterion.noValue" >
+                  and ${criterion.condition}
+                </when>
+                <when test="criterion.singleValue" >
+                  and ${criterion.condition} #{criterion.value}
+                </when>
+                <when test="criterion.betweenValue" >
+                  and ${criterion.condition} #{criterion.value} and #{criterion.secondValue}
+                </when>
+                <when test="criterion.listValue" >
+                  and ${criterion.condition}
+                  <foreach collection="criterion.value" item="listItem" open="(" close=")" separator="," >
+                    #{listItem}
+                  </foreach>
+                </when>
+              </choose>
+            </foreach>
+          </trim>
+        </if>
+      </foreach>
+    </where>
+  </sql>
+  <sql id="Update_By_Example_Where_Clause" >
+    <where >
+      <foreach collection="example.oredCriteria" item="criteria" separator="or" >
+        <if test="criteria.valid" >
+          <trim prefix="(" suffix=")" prefixOverrides="and" >
+            <foreach collection="criteria.criteria" item="criterion" >
+              <choose >
+                <when test="criterion.noValue" >
+                  and ${criterion.condition}
+                </when>
+                <when test="criterion.singleValue" >
+                  and ${criterion.condition} #{criterion.value}
+                </when>
+                <when test="criterion.betweenValue" >
+                  and ${criterion.condition} #{criterion.value} and #{criterion.secondValue}
+                </when>
+                <when test="criterion.listValue" >
+                  and ${criterion.condition}
+                  <foreach collection="criterion.value" item="listItem" open="(" close=")" separator="," >
+                    #{listItem}
+                  </foreach>
+                </when>
+              </choose>
+            </foreach>
+          </trim>
+        </if>
+      </foreach>
+    </where>
+  </sql>
+  <sql id="Base_Column_List" >
+    bigad_id, bigad_pic, bigad_front
+  </sql>
+  <select id="selectByExample" resultMap="BaseResultMap" parameterType="com.jump.pojo.BigadExample" >
+    select
+    <if test="distinct" >
+      distinct
+    </if>
+    <include refid="Base_Column_List" />
+    from bigad
+    <if test="_parameter != null" >
+      <include refid="Example_Where_Clause" />
+    </if>
+    <if test="orderByClause != null" >
+      order by ${orderByClause}
+    </if>
+  </select>
+  <select id="selectByPrimaryKey" resultMap="BaseResultMap" parameterType="java.lang.Integer" >
+    select 
+    <include refid="Base_Column_List" />
+    from bigad
+    where bigad_id = #{bigadId,jdbcType=INTEGER}
+  </select>
+  <delete id="deleteByPrimaryKey" parameterType="java.lang.Integer" >
+    delete from bigad
+    where bigad_id = #{bigadId,jdbcType=INTEGER}
+  </delete>
+  <delete id="deleteByExample" parameterType="com.jump.pojo.BigadExample" >
+    delete from bigad
+    <if test="_parameter != null" >
+      <include refid="Example_Where_Clause" />
+    </if>
+  </delete>
+  <insert id="insert" parameterType="com.jump.pojo.Bigad" >
+    insert into bigad (bigad_id, bigad_pic, bigad_front
+      )
+    values (#{bigadId,jdbcType=INTEGER}, #{bigadPic,jdbcType=VARCHAR}, #{bigadFront,jdbcType=INTEGER}
+      )
+  </insert>
+  <insert id="insertSelective" parameterType="com.jump.pojo.Bigad" >
+    insert into bigad
+    <trim prefix="(" suffix=")" suffixOverrides="," >
+      <if test="bigadId != null" >
+        bigad_id,
+      </if>
+      <if test="bigadPic != null" >
+        bigad_pic,
+      </if>
+      <if test="bigadFront != null" >
+        bigad_front,
+      </if>
+    </trim>
+    <trim prefix="values (" suffix=")" suffixOverrides="," >
+      <if test="bigadId != null" >
+        #{bigadId,jdbcType=INTEGER},
+      </if>
+      <if test="bigadPic != null" >
+        #{bigadPic,jdbcType=VARCHAR},
+      </if>
+      <if test="bigadFront != null" >
+        #{bigadFront,jdbcType=INTEGER},
+      </if>
+    </trim>
+  </insert>
+  <select id="countByExample" parameterType="com.jump.pojo.BigadExample" resultType="java.lang.Integer" >
+    select count(*) from bigad
+    <if test="_parameter != null" >
+      <include refid="Example_Where_Clause" />
+    </if>
+  </select>
+  <update id="updateByExampleSelective" parameterType="map" >
+    update bigad
+    <set >
+      <if test="record.bigadId != null" >
+        bigad_id = #{record.bigadId,jdbcType=INTEGER},
+      </if>
+      <if test="record.bigadPic != null" >
+        bigad_pic = #{record.bigadPic,jdbcType=VARCHAR},
+      </if>
+      <if test="record.bigadFront != null" >
+        bigad_front = #{record.bigadFront,jdbcType=INTEGER},
+      </if>
+    </set>
+    <if test="_parameter != null" >
+      <include refid="Update_By_Example_Where_Clause" />
+    </if>
+  </update>
+  <update id="updateByExample" parameterType="map" >
+    update bigad
+    set bigad_id = #{record.bigadId,jdbcType=INTEGER},
+      bigad_pic = #{record.bigadPic,jdbcType=VARCHAR},
+      bigad_front = #{record.bigadFront,jdbcType=INTEGER}
+    <if test="_parameter != null" >
+      <include refid="Update_By_Example_Where_Clause" />
+    </if>
+  </update>
+  <update id="updateByPrimaryKeySelective" parameterType="com.jump.pojo.Bigad" >
+    update bigad
+    <set >
+      <if test="bigadPic != null" >
+        bigad_pic = #{bigadPic,jdbcType=VARCHAR},
+      </if>
+      <if test="bigadFront != null" >
+        bigad_front = #{bigadFront,jdbcType=INTEGER},
+      </if>
+    </set>
+    where bigad_id = #{bigadId,jdbcType=INTEGER}
+  </update>
+  <update id="updateByPrimaryKey" parameterType="com.jump.pojo.Bigad" >
+    update bigad
+    set bigad_pic = #{bigadPic,jdbcType=VARCHAR},
+      bigad_front = #{bigadFront,jdbcType=INTEGER}
+    where bigad_id = #{bigadId,jdbcType=INTEGER}
+  </update>
+</mapper>

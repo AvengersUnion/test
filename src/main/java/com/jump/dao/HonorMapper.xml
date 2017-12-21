@@ -1,0 +1,228 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.jump.dao.HonorMapper" >
+  <resultMap id="BaseResultMap" type="com.jump.pojo.Honor" >
+    <id column="honor_id" property="honorId" jdbcType="INTEGER" />
+    <result column="honor_title" property="honorTitle" jdbcType="VARCHAR" />
+    <result column="honor_pic" property="honorPic" jdbcType="VARCHAR" />
+    <result column="honor_simple" property="honorSimple" jdbcType="VARCHAR" />
+    <result column="honor_front" property="honorFront" jdbcType="INTEGER" />
+    <result column="honor_dec" property="honorDec" jdbcType="BIGINT" />
+  </resultMap>
+  <sql id="Example_Where_Clause" >
+    <where >
+      <foreach collection="oredCriteria" item="criteria" separator="or" >
+        <if test="criteria.valid" >
+          <trim prefix="(" suffix=")" prefixOverrides="and" >
+            <foreach collection="criteria.criteria" item="criterion" >
+              <choose >
+                <when test="criterion.noValue" >
+                  and ${criterion.condition}
+                </when>
+                <when test="criterion.singleValue" >
+                  and ${criterion.condition} #{criterion.value}
+                </when>
+                <when test="criterion.betweenValue" >
+                  and ${criterion.condition} #{criterion.value} and #{criterion.secondValue}
+                </when>
+                <when test="criterion.listValue" >
+                  and ${criterion.condition}
+                  <foreach collection="criterion.value" item="listItem" open="(" close=")" separator="," >
+                    #{listItem}
+                  </foreach>
+                </when>
+              </choose>
+            </foreach>
+          </trim>
+        </if>
+      </foreach>
+    </where>
+  </sql>
+  <sql id="Update_By_Example_Where_Clause" >
+    <where >
+      <foreach collection="example.oredCriteria" item="criteria" separator="or" >
+        <if test="criteria.valid" >
+          <trim prefix="(" suffix=")" prefixOverrides="and" >
+            <foreach collection="criteria.criteria" item="criterion" >
+              <choose >
+                <when test="criterion.noValue" >
+                  and ${criterion.condition}
+                </when>
+                <when test="criterion.singleValue" >
+                  and ${criterion.condition} #{criterion.value}
+                </when>
+                <when test="criterion.betweenValue" >
+                  and ${criterion.condition} #{criterion.value} and #{criterion.secondValue}
+                </when>
+                <when test="criterion.listValue" >
+                  and ${criterion.condition}
+                  <foreach collection="criterion.value" item="listItem" open="(" close=")" separator="," >
+                    #{listItem}
+                  </foreach>
+                </when>
+              </choose>
+            </foreach>
+          </trim>
+        </if>
+      </foreach>
+    </where>
+  </sql>
+  <sql id="Base_Column_List" >
+    honor_id, honor_title, honor_pic, honor_simple, honor_front, honor_dec
+  </sql>
+  <select id="selectByExample" resultMap="BaseResultMap" parameterType="com.jump.pojo.HonorExample" >
+    select
+    <if test="distinct" >
+      distinct
+    </if>
+    <include refid="Base_Column_List" />
+    from honor
+    <if test="_parameter != null" >
+      <include refid="Example_Where_Clause" />
+    </if>
+    <if test="orderByClause != null" >
+      order by ${orderByClause}
+    </if>
+  </select>
+  <select id="selectByPrimaryKey" resultMap="BaseResultMap" parameterType="java.lang.Integer" >
+    select 
+    <include refid="Base_Column_List" />
+    from honor
+    where honor_id = #{honorId,jdbcType=INTEGER}
+  </select>
+  <delete id="deleteByPrimaryKey" parameterType="java.lang.Integer" >
+    delete from honor
+    where honor_id = #{honorId,jdbcType=INTEGER}
+  </delete>
+  <delete id="deleteByExample" parameterType="com.jump.pojo.HonorExample" >
+    delete from honor
+    <if test="_parameter != null" >
+      <include refid="Example_Where_Clause" />
+    </if>
+  </delete>
+  <insert id="insert" parameterType="com.jump.pojo.Honor" >
+    insert into honor (honor_id, honor_title, honor_pic, 
+      honor_simple, honor_front, honor_dec
+      )
+    values (#{honorId,jdbcType=INTEGER}, #{honorTitle,jdbcType=VARCHAR}, #{honorPic,jdbcType=VARCHAR}, 
+      #{honorSimple,jdbcType=VARCHAR}, #{honorFront,jdbcType=INTEGER}, #{honorDec,jdbcType=BIGINT}
+      )
+  </insert>
+  <insert id="insertSelective" parameterType="com.jump.pojo.Honor" >
+    insert into honor
+    <trim prefix="(" suffix=")" suffixOverrides="," >
+      <if test="honorId != null" >
+        honor_id,
+      </if>
+      <if test="honorTitle != null" >
+        honor_title,
+      </if>
+      <if test="honorPic != null" >
+        honor_pic,
+      </if>
+      <if test="honorSimple != null" >
+        honor_simple,
+      </if>
+      <if test="honorFront != null" >
+        honor_front,
+      </if>
+      <if test="honorDec != null" >
+        honor_dec,
+      </if>
+    </trim>
+    <trim prefix="values (" suffix=")" suffixOverrides="," >
+      <if test="honorId != null" >
+        #{honorId,jdbcType=INTEGER},
+      </if>
+      <if test="honorTitle != null" >
+        #{honorTitle,jdbcType=VARCHAR},
+      </if>
+      <if test="honorPic != null" >
+        #{honorPic,jdbcType=VARCHAR},
+      </if>
+      <if test="honorSimple != null" >
+        #{honorSimple,jdbcType=VARCHAR},
+      </if>
+      <if test="honorFront != null" >
+        #{honorFront,jdbcType=INTEGER},
+      </if>
+      <if test="honorDec != null" >
+        #{honorDec,jdbcType=BIGINT},
+      </if>
+    </trim>
+  </insert>
+  <select id="countByExample" parameterType="com.jump.pojo.HonorExample" resultType="java.lang.Integer" >
+    select count(*) from honor
+    <if test="_parameter != null" >
+      <include refid="Example_Where_Clause" />
+    </if>
+  </select>
+  <update id="updateByExampleSelective" parameterType="map" >
+    update honor
+    <set >
+      <if test="record.honorId != null" >
+        honor_id = #{record.honorId,jdbcType=INTEGER},
+      </if>
+      <if test="record.honorTitle != null" >
+        honor_title = #{record.honorTitle,jdbcType=VARCHAR},
+      </if>
+      <if test="record.honorPic != null" >
+        honor_pic = #{record.honorPic,jdbcType=VARCHAR},
+      </if>
+      <if test="record.honorSimple != null" >
+        honor_simple = #{record.honorSimple,jdbcType=VARCHAR},
+      </if>
+      <if test="record.honorFront != null" >
+        honor_front = #{record.honorFront,jdbcType=INTEGER},
+      </if>
+      <if test="record.honorDec != null" >
+        honor_dec = #{record.honorDec,jdbcType=BIGINT},
+      </if>
+    </set>
+    <if test="_parameter != null" >
+      <include refid="Update_By_Example_Where_Clause" />
+    </if>
+  </update>
+  <update id="updateByExample" parameterType="map" >
+    update honor
+    set honor_id = #{record.honorId,jdbcType=INTEGER},
+      honor_title = #{record.honorTitle,jdbcType=VARCHAR},
+      honor_pic = #{record.honorPic,jdbcType=VARCHAR},
+      honor_simple = #{record.honorSimple,jdbcType=VARCHAR},
+      honor_front = #{record.honorFront,jdbcType=INTEGER},
+      honor_dec = #{record.honorDec,jdbcType=BIGINT}
+    <if test="_parameter != null" >
+      <include refid="Update_By_Example_Where_Clause" />
+    </if>
+  </update>
+  <update id="updateByPrimaryKeySelective" parameterType="com.jump.pojo.Honor" >
+    update honor
+    <set >
+      <if test="honorTitle != null" >
+        honor_title = #{honorTitle,jdbcType=VARCHAR},
+      </if>
+      <if test="honorPic != null" >
+        honor_pic = #{honorPic,jdbcType=VARCHAR},
+      </if>
+      <if test="honorSimple != null" >
+        honor_simple = #{honorSimple,jdbcType=VARCHAR},
+      </if>
+      <if test="honorFront != null" >
+        honor_front = #{honorFront,jdbcType=INTEGER},
+      </if>
+      <if test="honorDec != null" >
+        honor_dec = #{honorDec,jdbcType=BIGINT},
+      </if>
+    </set>
+    where honor_id = #{honorId,jdbcType=INTEGER}
+  </update>
+  <update id="updateByPrimaryKey" parameterType="com.jump.pojo.Honor" >
+    update honor
+    set honor_title = #{honorTitle,jdbcType=VARCHAR},
+      honor_pic = #{honorPic,jdbcType=VARCHAR},
+      honor_simple = #{honorSimple,jdbcType=VARCHAR},
+      honor_front = #{honorFront,jdbcType=INTEGER},
+      honor_dec = #{honorDec,jdbcType=BIGINT}
+    where honor_id = #{honorId,jdbcType=INTEGER}
+  </update>
+</mapper>

@@ -1,0 +1,228 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.jump.dao.BusinessMapper" >
+  <resultMap id="BaseResultMap" type="com.jump.pojo.Business" >
+    <id column="business_id" property="businessId" jdbcType="INTEGER" />
+    <result column="business_title" property="businessTitle" jdbcType="VARCHAR" />
+    <result column="business_pic" property="businessPic" jdbcType="VARCHAR" />
+    <result column="business_simple" property="businessSimple" jdbcType="VARCHAR" />
+    <result column="business_front" property="businessFront" jdbcType="INTEGER" />
+    <result column="business_dec" property="businessDec" jdbcType="BIGINT" />
+  </resultMap>
+  <sql id="Example_Where_Clause" >
+    <where >
+      <foreach collection="oredCriteria" item="criteria" separator="or" >
+        <if test="criteria.valid" >
+          <trim prefix="(" suffix=")" prefixOverrides="and" >
+            <foreach collection="criteria.criteria" item="criterion" >
+              <choose >
+                <when test="criterion.noValue" >
+                  and ${criterion.condition}
+                </when>
+                <when test="criterion.singleValue" >
+                  and ${criterion.condition} #{criterion.value}
+                </when>
+                <when test="criterion.betweenValue" >
+                  and ${criterion.condition} #{criterion.value} and #{criterion.secondValue}
+                </when>
+                <when test="criterion.listValue" >
+                  and ${criterion.condition}
+                  <foreach collection="criterion.value" item="listItem" open="(" close=")" separator="," >
+                    #{listItem}
+                  </foreach>
+                </when>
+              </choose>
+            </foreach>
+          </trim>
+        </if>
+      </foreach>
+    </where>
+  </sql>
+  <sql id="Update_By_Example_Where_Clause" >
+    <where >
+      <foreach collection="example.oredCriteria" item="criteria" separator="or" >
+        <if test="criteria.valid" >
+          <trim prefix="(" suffix=")" prefixOverrides="and" >
+            <foreach collection="criteria.criteria" item="criterion" >
+              <choose >
+                <when test="criterion.noValue" >
+                  and ${criterion.condition}
+                </when>
+                <when test="criterion.singleValue" >
+                  and ${criterion.condition} #{criterion.value}
+                </when>
+                <when test="criterion.betweenValue" >
+                  and ${criterion.condition} #{criterion.value} and #{criterion.secondValue}
+                </when>
+                <when test="criterion.listValue" >
+                  and ${criterion.condition}
+                  <foreach collection="criterion.value" item="listItem" open="(" close=")" separator="," >
+                    #{listItem}
+                  </foreach>
+                </when>
+              </choose>
+            </foreach>
+          </trim>
+        </if>
+      </foreach>
+    </where>
+  </sql>
+  <sql id="Base_Column_List" >
+    business_id, business_title, business_pic, business_simple, business_front, business_dec
+  </sql>
+  <select id="selectByExample" resultMap="BaseResultMap" parameterType="com.jump.pojo.BusinessExample" >
+    select
+    <if test="distinct" >
+      distinct
+    </if>
+    <include refid="Base_Column_List" />
+    from business
+    <if test="_parameter != null" >
+      <include refid="Example_Where_Clause" />
+    </if>
+    <if test="orderByClause != null" >
+      order by ${orderByClause}
+    </if>
+  </select>
+  <select id="selectByPrimaryKey" resultMap="BaseResultMap" parameterType="java.lang.Integer" >
+    select 
+    <include refid="Base_Column_List" />
+    from business
+    where business_id = #{businessId,jdbcType=INTEGER}
+  </select>
+  <delete id="deleteByPrimaryKey" parameterType="java.lang.Integer" >
+    delete from business
+    where business_id = #{businessId,jdbcType=INTEGER}
+  </delete>
+  <delete id="deleteByExample" parameterType="com.jump.pojo.BusinessExample" >
+    delete from business
+    <if test="_parameter != null" >
+      <include refid="Example_Where_Clause" />
+    </if>
+  </delete>
+  <insert id="insert" parameterType="com.jump.pojo.Business" >
+    insert into business (business_id, business_title, business_pic, 
+      business_simple, business_front, business_dec
+      )
+    values (#{businessId,jdbcType=INTEGER}, #{businessTitle,jdbcType=VARCHAR}, #{businessPic,jdbcType=VARCHAR}, 
+      #{businessSimple,jdbcType=VARCHAR}, #{businessFront,jdbcType=INTEGER}, #{businessDec,jdbcType=BIGINT}
+      )
+  </insert>
+  <insert id="insertSelective" parameterType="com.jump.pojo.Business" >
+    insert into business
+    <trim prefix="(" suffix=")" suffixOverrides="," >
+      <if test="businessId != null" >
+        business_id,
+      </if>
+      <if test="businessTitle != null" >
+        business_title,
+      </if>
+      <if test="businessPic != null" >
+        business_pic,
+      </if>
+      <if test="businessSimple != null" >
+        business_simple,
+      </if>
+      <if test="businessFront != null" >
+        business_front,
+      </if>
+      <if test="businessDec != null" >
+        business_dec,
+      </if>
+    </trim>
+    <trim prefix="values (" suffix=")" suffixOverrides="," >
+      <if test="businessId != null" >
+        #{businessId,jdbcType=INTEGER},
+      </if>
+      <if test="businessTitle != null" >
+        #{businessTitle,jdbcType=VARCHAR},
+      </if>
+      <if test="businessPic != null" >
+        #{businessPic,jdbcType=VARCHAR},
+      </if>
+      <if test="businessSimple != null" >
+        #{businessSimple,jdbcType=VARCHAR},
+      </if>
+      <if test="businessFront != null" >
+        #{businessFront,jdbcType=INTEGER},
+      </if>
+      <if test="businessDec != null" >
+        #{businessDec,jdbcType=BIGINT},
+      </if>
+    </trim>
+  </insert>
+  <select id="countByExample" parameterType="com.jump.pojo.BusinessExample" resultType="java.lang.Integer" >
+    select count(*) from business
+    <if test="_parameter != null" >
+      <include refid="Example_Where_Clause" />
+    </if>
+  </select>
+  <update id="updateByExampleSelective" parameterType="map" >
+    update business
+    <set >
+      <if test="record.businessId != null" >
+        business_id = #{record.businessId,jdbcType=INTEGER},
+      </if>
+      <if test="record.businessTitle != null" >
+        business_title = #{record.businessTitle,jdbcType=VARCHAR},
+      </if>
+      <if test="record.businessPic != null" >
+        business_pic = #{record.businessPic,jdbcType=VARCHAR},
+      </if>
+      <if test="record.businessSimple != null" >
+        business_simple = #{record.businessSimple,jdbcType=VARCHAR},
+      </if>
+      <if test="record.businessFront != null" >
+        business_front = #{record.businessFront,jdbcType=INTEGER},
+      </if>
+      <if test="record.businessDec != null" >
+        business_dec = #{record.businessDec,jdbcType=BIGINT},
+      </if>
+    </set>
+    <if test="_parameter != null" >
+      <include refid="Update_By_Example_Where_Clause" />
+    </if>
+  </update>
+  <update id="updateByExample" parameterType="map" >
+    update business
+    set business_id = #{record.businessId,jdbcType=INTEGER},
+      business_title = #{record.businessTitle,jdbcType=VARCHAR},
+      business_pic = #{record.businessPic,jdbcType=VARCHAR},
+      business_simple = #{record.businessSimple,jdbcType=VARCHAR},
+      business_front = #{record.businessFront,jdbcType=INTEGER},
+      business_dec = #{record.businessDec,jdbcType=BIGINT}
+    <if test="_parameter != null" >
+      <include refid="Update_By_Example_Where_Clause" />
+    </if>
+  </update>
+  <update id="updateByPrimaryKeySelective" parameterType="com.jump.pojo.Business" >
+    update business
+    <set >
+      <if test="businessTitle != null" >
+        business_title = #{businessTitle,jdbcType=VARCHAR},
+      </if>
+      <if test="businessPic != null" >
+        business_pic = #{businessPic,jdbcType=VARCHAR},
+      </if>
+      <if test="businessSimple != null" >
+        business_simple = #{businessSimple,jdbcType=VARCHAR},
+      </if>
+      <if test="businessFront != null" >
+        business_front = #{businessFront,jdbcType=INTEGER},
+      </if>
+      <if test="businessDec != null" >
+        business_dec = #{businessDec,jdbcType=BIGINT},
+      </if>
+    </set>
+    where business_id = #{businessId,jdbcType=INTEGER}
+  </update>
+  <update id="updateByPrimaryKey" parameterType="com.jump.pojo.Business" >
+    update business
+    set business_title = #{businessTitle,jdbcType=VARCHAR},
+      business_pic = #{businessPic,jdbcType=VARCHAR},
+      business_simple = #{businessSimple,jdbcType=VARCHAR},
+      business_front = #{businessFront,jdbcType=INTEGER},
+      business_dec = #{businessDec,jdbcType=BIGINT}
+    where business_id = #{businessId,jdbcType=INTEGER}
+  </update>
+</mapper>
